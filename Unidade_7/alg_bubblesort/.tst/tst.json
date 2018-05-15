@@ -1,0 +1,14 @@
+{
+  "files": {
+    "alg_bubblesort.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: Um Passo do Algoritmo BubbleSort\n\nlista = []\nwhile True:\n\tsequencia = raw_input().split()\n\tif sequencia[0] == 'fim':\n\t\tbreak\n\tfor i in range(len(sequencia)-1):\n\t\tif sequencia[i] > sequencia[i+1]:\n\t\t\tsequencia[i+1], sequencia[i] = sequencia[i], sequencia[i+1]\n\tnova_string = ''\n\tfor j in range(len(sequencia)):\n\t\tif j == (len(sequencia)-1):\n\t\t\tnova_string += sequencia[j]\n\t\telse:\n\t\t\tnova_string += sequencia[j] + ' '\n\tlista.append(nova_string)\n\nfor i in lista:\n\tprint i\n\n",
+      "name": "alg_bubblesort.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5fb647f74660d021bc5594ca2d3469c4",
+  "iid": 5322445384843264,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "privilegia_letra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: Privilegia Letra\n\ndef letra_magica(fila, letra):\n\n\tindice = 0\n\tfor i in range(len(fila)):\n\t\tif fila[i][0] == letra:\n\t\t\tj = i\n\t\t\twhile j > indice:\n\t\t\t\tfila[j], fila[j-1] = fila[j-1], fila[j]\n\t\t\t\tj -= 1\n\t\t\tindice += 1\n\t\t\t\nfila = [\"carlos\", \"bruno\", \"andre\", \"daniel\", \"ana\", \"carla\"]\nassert letra_magica(fila, \"a\") is None\nassert fila == [\"andre\", \"ana\", \"carlos\", \"bruno\", \"daniel\", \"carla\"]\n",
+      "name": "privilegia_letra.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nletra_magica = getattr(undertest, 'letra_magica', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n        fila = [\"carlos\", \"bruno\", \"andre\", \"daniel\", \"ana\", \"carla\"]\n        letra_magica(fila, \"a\")\n        assert fila == [\"andre\", \"ana\", \"carlos\", \"bruno\", \"daniel\", \"carla\"]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f5371c325d8ff6ea06c87a787ece9a3a",
+  "iid": 6135842833694720,
+  "activity_revision": "1.0.2"
+}

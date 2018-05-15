@@ -1,0 +1,18 @@
+{
+  "files": {
+    "sm_sm.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\nnumero4 = int(raw_input())\n\nsegundo_menor = segundo_maior = 0\n\nif numero1 <= numero2 and numero1 >= numero3 and numero1 >= numero4:\n\tsegundo_maior = numero1\nelif numero1 <= numero3 and numero1 >= numero4 and numero1 >= numero2:\n\tsegundo_maior = numero1\nelif numero1 <= numero4 and numero1 >= numero2 and numero1 >= numero3:\n\tsegundo_maior = numero1\n\t\nelif numero2 <= numero1 and numero2 >= numero3 and numero2 >= numero4:\n\tsegundo_maior = numero2\nelif numero2 <= numero3 and numero2 >= numero4 and numero2 >= numero1:\n\tsegundo_maior = numero2\nelif numero2 <= numero4 and numero2 >= numero1 and numero2 >= numero3:\n\tsegundo_maior = numero2\n\nelif numero3 <= numero2 and numero3 >= numero1 and numero3 >= numero4:\n\tsegundo_maior = numero3\nelif numero3 <= numero1 and numero3 >= numero4 and numero3 >= numero2:\n\tsegundo_maior = numero3\nelif numero3 <= numero4 and numero3 >= numero2 and numero3 >= numero1:\n\tsegundo_maior = numero3\n\nelse:\n\tsegundo_maior = numero4\n\t\n# segundo menor\n\nif numero1 >= numero2 and numero1 <= numero3 and numero1 <= numero4:\n\tsegundo_menor = numero1\nelif numero1 >= numero3 and numero1 <= numero4 and numero1 <= numero2:\n\tsegundo_menor = numero1\nelif numero1 >= numero4 and numero1 <= numero2 and numero1 <= numero3:\n\tsegundo_menor = numero1\n\nelif numero2 >= numero1 and numero2 <= numero3 and numero2 <= numero4:\n\tsegundo_menor = numero2\nelif numero2 >= numero3 and numero2 <= numero4 and numero2 <= numero1:\n\tsegundo_menor = numero2\nelif numero2 >= numero4 and numero2 <= numero1 and numero2 <= numero3:\n\tsegundo_menor = numero2\n\nelif numero3 >= numero2 and numero3 <= numero1 and numero3 <= numero4:\n\tsegundo_menor = numero3\nelif numero3 >= numero1 and numero3 <= numero4 and numero3 <= numero2:\n\tsegundo_menor = numero3\nelif numero3 >= numero4 and numero3 <= numero2 and numero3 <= numero1:\n\tsegundo_menor = numero3\n\nelse:\n\tsegundo_menor = numero4\n\nprint \"Considerando os n\u00fameros %i, %i, %i e %i\" % (numero1,numero2,numero3,numero4)\nprint \"O segundo menor n\u00famero \u00e9 %i\" % segundo_menor\nprint \"O segundo maior n\u00famero \u00e9 %i\" % segundo_maior\n",
+      "name": "sm_sm.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 37,\n      \"vhalstead\": 147.15,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "589d40c0b3330830d1c317d0a410764e",
+  "iid": 6131235449470976,
+  "activity_revision": "1.0.1"
+}

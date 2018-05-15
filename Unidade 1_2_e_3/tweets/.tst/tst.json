@@ -1,7 +1,14 @@
 {
-  "files": {},
-  "iid": 6080029398138880,
+  "files": {
+    "tweets.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Tweets por pagina\n\nquantidade_tweets = int(raw_input())\n\nquantidade_paginas = quantidade_tweets / 400\ntweets_perdidos = quantidade_tweets % 400.0\nporcentagem_tweets_perdidos = tweets_perdidos * 100.0 / quantidade_tweets\n\nprint \"Ser\u00e3o necess\u00e1rias %i p\u00e1gina(s) para visualizar os tweets.\" % quantidade_paginas\nprint \"%.1f%% dos tweets ser\u00e3o perdidos.\" % porcentagem_tweets_perdidos\n",
+      "name": "tweets.py"
+    }
+  },
   "kind": "assignment",
-  "activity_revision": "1.1.1",
-  "name": null
+  "name": null,
+  "checksum": "ebc61a0da888d32f0ecf36300b802eb3",
+  "iid": 6080029398138880,
+  "activity_revision": "1.1.1"
 }

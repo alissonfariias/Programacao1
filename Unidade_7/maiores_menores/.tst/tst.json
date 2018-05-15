@@ -1,0 +1,14 @@
+{
+  "files": {
+    "maiores_menores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: Maiores e Menores\n\npivot = int(raw_input())\n\nlista_menores = []\nlista_maiores = []\nwhile True:\n\tseq = int(raw_input())\n\tif seq < 0:\n\t\tbreak\n\tif seq <= pivot:\n\t\tlista_menores.append(seq)\n\telse:\n\t\tlista_maiores.append(seq)\n\nprint lista_menores\nprint pivot\nprint lista_maiores\n",
+      "name": "maiores_menores.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f0a0b427f24eb1297510f82d3f146125",
+  "iid": 5905974405627904,
+  "activity_revision": "1.0.1"
+}

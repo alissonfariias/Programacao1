@@ -1,13 +1,19 @@
 {
   "files": {
+    "filtra_altera.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: Filtrando Elementos e Alterando uma Lista\n\ndef filtra_altera_lista(num, lista):\n\n\tfor i in range(len(lista)-1,-1,-1):\n\t\tif i % num != 0:\n\t\t\tlista.pop(i)\n\t\n\treturn lista\n\nlista = [0,1,2,3,4,5,6]\n\nfiltra_altera_lista(2, lista)\nassert lista == [0,2,4,6]\n\nfiltra_altera_lista(3, lista)\nassert lista == [0,6]\n",
+      "name": "filtra_altera.py"
+    },
     "public_tests.py": {
       "category": "public",
       "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_altera_lista = getattr(undertest, 'filtra_altera_lista', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [0,1,2,3,4,5,6]\n       filtra_altera_lista(2, seq)\n       assert seq == [0, 2, 4 ,6]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
       "name": "public_tests.py"
     }
   },
-  "iid": 6411749385306112,
   "kind": "assignment",
-  "activity_revision": "1.0.9",
-  "name": null
+  "name": null,
+  "checksum": "d43ea2077909645b7b354914ac7a9421",
+  "iid": 6411749385306112,
+  "activity_revision": "1.0.9"
 }
