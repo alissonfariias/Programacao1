@@ -1,0 +1,18 @@
+{
+  "files": {
+    "divisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Soma os Divisores do Primeiro Elemento de uma Lista\n\nsoma = 0\nreferencia = int(raw_input())\nfor i in range(10):\n\tx = int(raw_input())\n\tif referencia % x == 0:\n\t\tsoma += x\n\nprint soma\n",
+      "name": "divisores.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dfeb246e6885112ded48a3bd67bdf4e6",
+  "iid": 5841009233625088,
+  "activity_revision": "1.0.5"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsquare_code = getattr(undertest, 'square_code', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        m = \"O tatu virou uma bola!!!\"\n        assert square_code(m) == \"Ovul tima ara tob uuo\"\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "square_code.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 9\tQuest\u00e3o: Square Code\n\ndef square_code(mensagem):\n\n\tdef meu_join(delimitador, sequencia_de_string):\n\t\tnova_sequencia = ''\n\t\tif len(sequencia_de_string) == 1:\n\t\t\tnova_sequencia += sequencia_de_string[0]\n\t\telse:\n\t\t\tfor i in range(len(sequencia_de_string)):\n\t\t\t\tif i == (len(sequencia_de_string)-1):\n\t\t\t\t\tnova_sequencia += sequencia_de_string[i]\n\t\t\t\telse:\n\t\t\t\t\tnova_sequencia += sequencia_de_string[i] + delimitador\n\t\treturn nova_sequencia\n\t\n\timport math\n\t\n\tstring = ''\n\tfor i in range(len(mensagem)):\n\t\tif mensagem[i].isalpha():\n\t\t\tstring += mensagem[i]\n\t\n\tnumero_linhas = len(string) ** 0.5\n\tnumero_colunas = int(math.ceil(len(string) / numero_linhas))\n\tnumero_linhas = int(math.floor(numero_linhas))\n\t\n\tpalavra = ''\n\tlista = []\n\tfor j in range(len(string)):\n\t\tpalavra += string[j]\n\t\tif (j+ 1) % numero_colunas == 0:\n\t\t\tlista.append(palavra)\n\t\t\tpalavra = ''\n\tif len(palavra) != 0:\n\t\tlista.append(palavra)\n\t\n\tfinal = [''] * numero_colunas\n\t\n\tfor i in lista:\n\t\tfor j in range(len(i)):\n\t\t\tfinal[j] += i[j]\n\t\n\treturn meu_join(' ', final)\n\nm = \"O tatu virou uma bola!!!\"\nassert square_code(m) == \"Ovul tima ara tob uuo\"\n",
+      "name": "square_code.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cf9e48ed21ad92a7db7a58314a42aeea",
+  "iid": 5327843353427968,
+  "activity_revision": "1.0.2"
+}

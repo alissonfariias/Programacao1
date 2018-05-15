@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "calculo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Per\u00edodo: 2017.2\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 6\tQuest\u00e3o: C\u00e1lculo de Seguro\n\ndef calcula_seguro(valor_veiculo,lista):\n\t\n\tidade = lista[0]\n\tstatus = lista[1]\n\tpossui_cartao = lista[2]\n\tarea_de_risco = lista[3]\n\tcasa_ou_ap = lista[4]\n\tpropria_ou_alugada = lista[5]\n\tuso_do_carro = lista[6]\n\t\n\tpontos = 0\n\t\n\tif idade <= 21:\n\t\tpontos += 20\n\telif idade >= 22 and idade <= 30:\n\t\tpontos += 15\n\telif idade >= 31 and idade <= 40:\n\t\tpontos += 12\n\telif idade >= 41 and idade <= 60:\n\t\tpontos += 10\n\telif idade > 60:\n\t\tpontos += 20\n\t\t\n\tif status == True:\n\t\tpontos += 10\n\telif status == False:\n\t\tpontos += 20\n\t\n\tif possui_cartao == True:\n\t\tpontos += 20\n\telif possui_cartao == False:\n\t\tpontos += 10\n\t\t\n\tif area_de_risco == True:\n\t\tpontos += 20\n\telif area_de_risco == False:\n\t\tpontos += 10\n\t\n\tif casa_ou_ap == True:\n\t\tpontos += 20\n\telif casa_ou_ap == False:\n\t\tpontos += 10\n\t\n\tif propria_ou_alugada == True:\n\t\tpontos += 10\n\telif propria_ou_alugada == False:\n\t\tpontos += 20\n\t\n\tif uso_do_carro == 'Lazer':\n\t\tpontos += 20\n\telif uso_do_carro == 'Trabalho':\n\t\tpontos += 10\n\telif uso_do_carro == 'Misto':\n\t\tpontos += 20\n\t\n\tif pontos <= 80:\n\t\trisco = 'Risco Baixo'\n\telif pontos > 80 and pontos <= 100:\n\t\trisco = 'Risco Medio'\n\telif pontos > 100:\n\t\trisco = 'Risco Alto'\n\t\n\tif risco == 'Risco Baixo':\n\t\tvalor_a_pagar = valor_veiculo / 100 * 10\n\telif risco == 'Risco Medio':\n\t\tvalor_a_pagar = valor_veiculo / 100 * 20\n\telif risco == 'Risco Alto':\n\t\tvalor_a_pagar = valor_veiculo / 100 * 30\n\t\n\tresultado = []\n\tresultado.append(pontos)\n\tresultado.append(risco)\n\tresultado.append(valor_a_pagar)\n\treturn resultado\n\nprint calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto'])\n",
+      "name": "calculo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b624868543a973dca89d41739fc81d22",
+  "iid": 5909987784130560,
+  "activity_revision": "1.0.0"
+}

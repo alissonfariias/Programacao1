@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "media_limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: M\u00e9dia Atinge Limite\n\nmedias = [] \ncont = 0\nsoma = 0\nwhile True:\n\tnumero = raw_input()\n\tif numero == '-':\n\t\tbreak\n\tcont += 1\n\tsoma += float(numero)\n\tmedias.append(soma/cont)\n\nalcancado = False\nvalor_limite = float(raw_input())\nfor i in range(len(medias)):\n\tif medias[i] > valor_limite:\n\t\tprint 'media = %.1f' % medias[i]\n\t\tprint 'num = %i' % (i+1)\n\t\talcancado = True\n\t\tbreak\n\nif alcancado == False:\n\tprint 'limite n\u00e3o alcan\u00e7ado'\n",
+      "name": "media_limite.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "81bc58bd9c65ba55dca90ec84b0d7ec4",
+  "iid": 5215395036266496,
+  "activity_revision": "1.0.3"
+}

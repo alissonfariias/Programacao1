@@ -1,0 +1,14 @@
+{
+  "files": {
+    "disco.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Espa\u00e7o em Disco Simplificado\n\nlogin1 = str(raw_input())\nespaco1 = float(raw_input())\nlogin2 = str(raw_input())\nespaco2 = float(raw_input())\nlogin3 = str(raw_input())\nespaco3 = float(raw_input())\n\nespaco1_mb = espaco1 / 1024 / 1024\nespaco2_mb = espaco2 / 1024 / 1024\nespaco3_mb = espaco3 / 1024 / 1024\nespaco_total = espaco1_mb + espaco2_mb + espaco3_mb\nespaco_medio = espaco_total / 3\n\nprint 'SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios'\nprint '---------------------------------------------'\nprint 'Nr., Usu\u00e1rio, Espa\u00e7o Utilizado\\n'\nprint '1, %s, %.2f MB' % (login1,espaco1_mb)\nprint '2, %s, %.2f MB' % (login2,espaco2_mb)\nprint '3, %s, %.2f MB\\n' % (login3,espaco3_mb)\nprint 'Espa\u00e7o total ocupado: %.2f MB' % espaco_total\nprint 'Espa\u00e7o m\u00e9dio ocupado: %.2f MB' % espaco_medio\n",
+      "name": "disco.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d7039431b9614ff1c5f91fdeba9e97a0",
+  "iid": 6063640339808256,
+  "activity_revision": "1.1.0"
+}

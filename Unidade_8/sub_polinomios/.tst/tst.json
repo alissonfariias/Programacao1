@@ -1,0 +1,19 @@
+{
+  "files": {
+    "sub.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 8\tQuest\u00e3o: Subtra\u00e7\u00e3o de Polinomios\n\ndef subtrai_polinomios(l1,l2):\n\twhile len(l1) < len(l2):\n\t\tl1.append(0)\n\twhile len(l1) > len(l2):\n\t\tl2.append(0)\n\t\t\n\tsaida = []\n\tfor i in range(len(l1)):\n\t\tsaida.append(l1[i] - l2[i])\n\twhile saida[-1] == 0:\n\t\tsaida.pop()\n\treturn saida\np1 = [-5, 4, 3]\np2 = [-1, 0, 2, 0, 0, 0, 5]\nassert subtrai_polinomios(p1, p2) == [-4, 4, 1, 0, 0, 0, -5]\n",
+      "name": "sub.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsubtrai_polinomios = getattr(undertest, 'subtrai_polinomios', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        p1 = [-5, 4, 3]\n        p2 = [-1, 0, 2, 0, 0, 0, 5]\n        assert subtrai_polinomios(p1, p2) == [-4, 4, 1, 0, 0, 0, -5]\n\n    def test_exemplo_2(self):\n        p1 = [-5, 4, 3]  # 3x2 + 4x - 5\n        p2 = [-4, 2, 3]  # 3x2 + 2x - 4\n        assert subtrai_polinomios(p1, p2) == [-1, 2]  # 2x - 1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b87fb531c461e4f7b42e5b14c37f6a4d",
+  "iid": 5211790283636736,
+  "activity_revision": "1.0.0"
+}

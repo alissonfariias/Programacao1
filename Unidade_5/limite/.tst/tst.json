@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: Limite de Gastos\n\nmedia_mensal = float(raw_input())\n\nmedias_maiores = []\nwhile True:\n\tsequencia = raw_input().split()\n\tif sequencia[0] == 'fim':\n\t\tbreak\n\tsoma = 0\n\tfor i in sequencia:\n\t\tsoma += float(i)\n\tmedia = soma / len(sequencia)\n\tif media > media_mensal:\n\t\tmedias_maiores.append(sequencia)\n\tif media_mensal / 2 > media:\n\t\tbreak\n\nfor i in range(len(medias_maiores)):\n\tstring = ''\n\tfor e in range(len(medias_maiores[i])):\n\t\tstring += medias_maiores[i][e] + ' '\n\tprint string.strip()\n",
+      "name": "limite.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c71751221b3f8ecc6a3bb645e20cf51b",
+  "iid": 5812817202511872,
+  "activity_revision": "1.0.2"
+}

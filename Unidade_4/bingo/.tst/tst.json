@@ -1,0 +1,14 @@
+{
+  "files": {
+    "bingo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 4\tQuest\u00e3o: Bingo\n\ncartela1 = raw_input().split()\ncartela2 = raw_input().split()\n\npontos1 = 0\npontos2 = 0\nwhile True:\n\tnum_sorteado = int(raw_input())\n\tfor i in range(len(cartela1)):\n\t\tif num_sorteado == int(cartela1[i]):\n\t\t\tpontos1 += 1\n\t\tif num_sorteado == int(cartela2[i]):\n\t\t\tpontos2 += 1\n\tif pontos1 == len(cartela1) and pontos2 == len(cartela2):\n\t\tprint 'Empate.'\n\t\tbreak\n\telif pontos1 == len(cartela1) and pontos2 < len(cartela2):\n\t\tprint 'Bingo! Jogador 1 venceu.'\n\t\tbreak\n\telif pontos1 < len(cartela1) and pontos2 == len(cartela2):\n\t\tprint 'Bingo! Jogador 2 venceu.'\n\t\tbreak\n",
+      "name": "bingo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "de70972c9955f2be126c9bf6d0a0acb9",
+  "iid": 5612781684391936,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nunico = getattr(undertest, 'unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\n\n   def test_string_vazia(self):\n       assert unico(\"\") == \"\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "unico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Per\u00edodo: 2017.2\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 6\tQuest\u00e3o: \u00danico\n\ndef unico(string):\n\n\tnova_string = ''\n\tfor i in range(len(string)):\n\t\tif string[i] not in nova_string:\n\t\t\tnova_string += string[i]\n\treturn nova_string\n\t\nassert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\nassert unico(\"\") == \"\"\n",
+      "name": "unico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1701153b2a1d9afd19e92b8302274f83",
+  "iid": 6461529230671872,
+  "activity_revision": "2.0.0"
+}

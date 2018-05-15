@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embarque.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: Embarque Organizado\n\nsequencia = raw_input().split()\nfor i in range(len(sequencia)):\n\tsequencia[i] = int(sequencia[i])\n\ntest = 0\ni = 0\nwhile not(i == len(sequencia)-1):\n\tif sequencia[i] % 2 == 0:\n\t\tfor j in range(i, len(sequencia)):\n\t\t\tif sequencia[j] % 2 != 0:\n\t\t\t\ttest += 1\n\t\t\t\t\n\ti += 1\n\t\n\tif test == 0 and i == len(sequencia)-1:\n\t\tprint 'ok'\n\telif test > 0 and i == len(sequencia)-1:\n\t\tprint 'erro'\n",
+      "name": "embarque.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b02c548652d7cbd209b958b160c2d29c",
+  "iid": 6119508200652800,
+  "activity_revision": "1.0.1"
+}

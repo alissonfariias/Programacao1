@@ -1,0 +1,14 @@
+{
+  "files": {
+    "enem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5 \t-\tQuest\u00e3o: Aprovados no ENEM\n\nlista_nomes = []\nlista_notas = []\nwhile True:\n\tdados = raw_input().split()\n\tif dados[0] == \"fim\":\n\t\tbreak\n\tnomes = dados[0]\n\tnotas = int(dados[1])\n\tlista_nomes.append(nomes)\n\tlista_notas.append(notas)\n\nnota_de_corte = int(raw_input())\n\ncont = 0\nfor i in range(len(lista_notas)):\n\tif lista_notas[i] >= nota_de_corte:\n\t\tprint '%s, %d' % (lista_nomes[i], lista_notas[i])\n\t\tcont += 1\nif cont == 0:\n\tprint 'Nenhum candidato aprovado.'\n",
+      "name": "enem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1559c7ef24aebd5e7600825b86d718ec",
+  "iid": 5150136497864704,
+  "activity_revision": "1.0.2"
+}

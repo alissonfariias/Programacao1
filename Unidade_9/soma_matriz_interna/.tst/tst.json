@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_matriz_interna = getattr(undertest, 'soma_matriz_interna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M2 = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]\n        assert soma_matriz_interna(M2, (1,1),(2,2)) == 5 + 6 + 8 + 9\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "soma_matriz_interna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 9\tQuest\u00e3o: Soma Matriz Interna\n\n# def somamatrizinterna(matriz, inicio, fim):\n\nM2 = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]\np1 = (1,1)\np2 = (2,2)\n\nfor i in range(len(M2)):\n\tfor j in range(len(M2[i])):\n\t\tif (i, j) == p1:\n\t\t\tinicio = M2[i][j]\n\t\telif (i, j) == p2:\n\t\t\tfim = M2[i][j]\n\nprint inicio\nprint fim\n\t\t\n",
+      "name": "soma_matriz_interna.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7dbdb3579bea36c93f702868828f3b09",
+  "iid": 5880026360709120,
+  "activity_revision": "1.0.1"
+}

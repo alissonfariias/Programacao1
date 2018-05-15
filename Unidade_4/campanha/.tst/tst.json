@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Campanha\n\ngols_pro = 0\ngols_contra = 0\nvitorias = 0\nempates = 0\nderrotas = 0\nfor i in range(10):\n\tn = raw_input()\n\tif n[5] == 'c':\n\t\tgols = n[0]\n\t\tcontra = n[2]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\telif n[5] == 'f':\n\t\tgols = n[2]\n\t\tcontra = n[0]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\nvitorias_em_casa = (vitorias * 3) + (empates * 1) + (derrota * 0)\n\n\nprint '%iv, %ie, %id' % (vitorias,empates,derrotas)\nprint 'pontos: %i' % gols_pro\nprint 'saldo: %i (%i pro, %i contra)' % (gols_pro-gols_contra,gols_pro,gols_contra)\nprint 'pontos em casa: %i' % vitorias_em_casa\nprint 'pontos fora: %i' % vitorias_fora\n",
+      "name": "campanha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e1b828e08d665c8c8d9b6785affce60d",
+  "iid": 6328674450145280,
+  "activity_revision": "1.0.1"
+}

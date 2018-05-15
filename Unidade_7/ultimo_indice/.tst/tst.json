@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nultimo_indice = getattr(undertest, 'ultimo_indice', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_1(self):\n      assert ultimo_indice(2, [15,2,13,11,14,2]) == 5\n      assert ultimo_indice(42, [15,2,13,11,14,2]) == -1\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "ultimo_indice.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Per\u00edodo: 2017.2\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: \u00daltimo \u00cdndice\n\ndef ultimo_indice(num, lista):\n\n\tfor i in range(len(lista)):\n\t\tif num not in lista:\n\t\t\tresultado = int('-1')\n\t\tif num == lista[i]:\n\t\t\tresultado = i\n\t\n\treturn resultado\n\nassert ultimo_indice(2, [15,2,13,11,14,2]) == 5\nassert ultimo_indice(42, [15,2,13,11,14,2]) == -1\n",
+      "name": "ultimo_indice.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b3149c8ce4e218840933c995575ad6a7",
+  "iid": 5779041109934080,
+  "activity_revision": "1.1.0"
+}

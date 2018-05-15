@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncoluna = getattr(undertest, 'coluna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\n        assert coluna(M,0) == [1,2,3]\n        assert coluna(M,1) == [1,2,3]\n        assert coluna(M,2) == [1,2,3]\n        assert coluna(M,3) == [1,2,3]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "coluna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 9\tQuest\u00e3o: Coluna\n\ndef coluna(matriz, i):\n\tlista = []\n\tfor k in range(len(matriz)):\n\t\tfor j in range(len(matriz[k])):\n\t\t\tif j == i:\n\t\t\t\tlista.append(matriz[k][j])\n\treturn lista\n\nM = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\nassert coluna(M,0) == [1,2,3]\nassert coluna(M,1) == [1,2,3]\nassert coluna(M,2) == [1,2,3]\nassert coluna(M,3) == [1,2,3]\n",
+      "name": "coluna.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c1a212757fa9f79e1b22338f6d455ab9",
+  "iid": 5830351473606656,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "equacoes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\na = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\nimport math\n\ndelta = b ** 2 - 4 * a * c\nif delta < 0:\n\tprint 'sem raizes reais'\nelif delta == 0:\n\traiz_de_delta = math.sqrt(delta)\t\n\tx1 = ((-1*b) + raiz_de_delta) / (2 * a)\n\tx2 = ((-1*b) - raiz_de_delta) / (2 * a)\n\tprint 'x = %.2f' % (x1 or x2)\nelse:\n\traiz_de_delta = math.sqrt(delta)\t\n\tx1 = ((-1*b) + raiz_de_delta) / (2 * a)\n\tx2 = ((-1*b) - raiz_de_delta) / (2 * a)\n\tprint 'x1 = %.2f\\nx2 = %.2f' % (x1,x2)\n",
+      "name": "equacoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 245.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "55d2987a53bdece3a14f20f6a5ed8154",
+  "iid": 6181939685883904,
+  "activity_revision": "1.1.2"
+}

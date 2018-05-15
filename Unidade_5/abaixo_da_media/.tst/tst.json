@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixo_da_media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5 \t-\tQuest\u00e3o: Abaixo da M\u00e9dia\n\nquant_valores = 0\nsoma_valores = 0.0\nlista_valores = []\nwhile True:\n\tvalor = raw_input()\n\tif valor == 'fim':\n\t\tbreak\t\n\tvalor = int(valor)\t\n\tlista_valores.append(valor)\n\tquant_valores += 1.0\n\tsoma_valores += valor\n\t\nmedia = soma_valores / quant_valores\n\nprint '%.2f' % media\n\nfor i in range(len(lista_valores)):\n\tif lista_valores[i] < media:\n\t\tprint i+1, lista_valores[i]\n",
+      "name": "abaixo_da_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8897111cb3a3a438b6bf3a1ba2b63640",
+  "iid": 5290686819598336,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "chave.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: Analisa Chave\n\nsenha = raw_input()\n\nsenha_valida = True\ncont_vogais = 0\nfor i in range(len(senha)-2):\n\tif senha[i] == senha[i+1] and senha[i] == senha[i+2]:\n\t\tprint 'Chave insegura. 3 caracteres consecutivos iguais.'\n\t\tsenha_valida = False\n\t\tbreak\n\tif senha[i] in 'AEIOUaeiou':\n\t\tcont_vogais += 1\n\t\tif cont_vogais > 5:\n\t\t\tprint 'Chave insegura. 6 vogais.'\n\t\t\tsenha_valida = False\n\t\t\tbreak\n\nif senha_valida:\t\n\tprint 'Chave segura!'\n",
+      "name": "chave.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bb9ddcc958e53c812152131be3a81a50",
+  "iid": 6461270827991040,
+  "activity_revision": "2.0.0"
+}

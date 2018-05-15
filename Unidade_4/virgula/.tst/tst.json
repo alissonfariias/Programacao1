@@ -1,0 +1,18 @@
+{
+  "files": {
+    "virgula.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Espa\u00e7o por V\u00edrgula\n\nfrase = raw_input()\ninteiro_i = int(raw_input())\ninteiro_j = int(raw_input())\n\nstring2 = \"\"\nfor i in range(inteiro_i,inteiro_j):\n\tif frase[i] == \" \":\n\t\tif i == inteiro_j - 1:\n\t\t\tstring2 += ','\n\t\telse:\n\t\t\tstring2 += ', '\n\telse:\n\t\tif i == inteiro_j - 1:\n\t\t\tstring2 += frase[i]\n\t\telse:\n\t\t\tstring2 += frase[i] + \" \"\n\nprint string2\n",
+      "name": "virgula.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 120.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9b43b5679ea533eb38debc25bd93e13c",
+  "iid": 5622933208694784,
+  "activity_revision": "1.1.4"
+}

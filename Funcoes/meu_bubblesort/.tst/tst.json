@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbubblesort = getattr(undertest, 'bubblesort', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista = [3,9,1,2]\n        bubblesort(lista)\n        assert lista == [1,2,3,9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "bubblesort.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 7, Quest\u00e3o: Bubblesort\n\ndef bubblesort(lista):\n    for i in range(0, len(lista)-1):\n        for j in range(0, len(lista)-1-i):\n\t\t\tif lista[j] > lista[j + 1]:\n\t\t\t\tlista[j], lista[j + 1] = lista[j + 1], lista[j]\n    return lista\n",
+      "name": "bubblesort.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e4d3ff139cbc96d615378b33e3cb111b",
+  "iid": 5851137504706560,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "quadrado.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 9\tQuest\u00e3o: \u00c9 Quadrado M\u00e1gico?\n\ndef eh_quadrado_magico(quadrado):\n\tlista = []\n\tfor i in quadrado:\n\t\tfor j in i:\n\t\t\tif j not in lista:\n\t\t\t\tlista.append(j)\n\t\n\taux = []\n\tfor i in quadrado:\n\t\tfor j in i:\n\t\t\taux.append(j)\n\t\n\tif lista == aux and len(quadrado) != 0:\n\t\t# Somando Linhas:\n\t\tsoma_linha = 0\n\t\tlista_linhas = []\n\t\tlinha = 0\n\t\twhile linha <= len(quadrado)-1:\n\t\t\tfor i in range(len(quadrado[linha])):\n\t\t\t\tsoma_linha += quadrado[linha][i]\n\t\t\tlista_linhas.append(soma_linha)\n\t\t\tsoma_linha = 0\n\t\t\tlinha += 1\n\t\t\n\t\t# Somando Colunas:\n\t\tsoma_coluna = 0\n\t\tlista_colunas = []\n\t\tcoluna = 0\n\t\twhile coluna <= len(quadrado)-1:\n\t\t\tfor j in range(len(quadrado)):\n\t\t\t\tsoma_coluna += quadrado[j][coluna]\n\t\t\tlista_colunas.append(soma_coluna)\n\t\t\tsoma_coluna = 0\n\t\t\tcoluna += 1\n\t\t\n\t\tlista_final = lista_linhas + lista_colunas\n\t\t\n\t\t# Somando Diagonal:\n\t\tsoma_diagonal = 0\n\t\tfor d in range(len(quadrado)):\n\t\t\tsoma_diagonal += quadrado[d][d]\n\t\tlista_final.append(soma_diagonal)\n\t\t\n\t\t# Somando Diagonal Secund\u00e1ria:\n\t\tsoma_diagonal_sec = 0\n\t\tfor ds in range(len(quadrado)):\n\t\t\tsoma_diagonal_sec += quadrado[ds][(len(quadrado)-1) - ds]\n\t\tlista_final.append(soma_diagonal_sec)\n\t\t\n\t\tteste = lista_final[0]\n\t\tfor i in lista_final:\n\t\t\tif i != teste:\n\t\t\t\treturn False\n\t\treturn True\n\telse:\n\t\treturn False\n\nquadrado1 = [[2,7,6],[9,5,1],[4,3,8]]\nquadrado2 = [[1,2,3],[4,5,6]]\nassert eh_quadrado_magico(quadrado1)\nassert not eh_quadrado_magico(quadrado2)\n",
+      "name": "quadrado.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\neh_quadrado_magico = getattr(undertest, 'eh_quadrado_magico', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n        assert eh_quadrado_magico([[2,7,6],[9,5,1],[4,3,8]])\n\n    def test_2(self):\n        assert not eh_quadrado_magico([[1,2,3],[4,5,6]])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ec56a908c109b5943ef6893ae1e5dc32",
+  "iid": 5814724067328000,
+  "activity_revision": "1.0.0"
+}

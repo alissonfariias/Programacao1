@@ -1,0 +1,14 @@
+{
+  "files": {
+    "arv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 4\tQuest\u00e3o: Desenhando uma \u00c1rvore de Natal\n\naltura = int(raw_input())\n\nlista = []\nelemento = 'o'\nfor i in range(altura):\n\tlista.append(elemento)\n\telemento += 'oo'\n\nfor j in range(len(lista)):\n\tprint (' ' * (altura - j - 1)) + lista[j] \nprint ' ' * (altura - 1) + 'o'\n",
+      "name": "arv.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a266a12b0546ea827f6cf735f8953b26",
+  "iid": 5251487961710592,
+  "activity_revision": "1.0.0"
+}

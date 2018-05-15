@@ -1,0 +1,19 @@
+{
+  "files": {
+    "qntos_comeram.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Per\u00edodo: 2017.2\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 6\tQuest\u00e3o: Quantos Comeram?\n\ndef quantos_comeram(N, fila):\n\tquantidade_feijoada = int(N)\n\tquantidade_inicial = int(N)\n\tfor i in range(len(fila)):\n\t\tif quantidade_feijoada < fila[i]:\n\t\t\tbreak\n\t\tquantidade_feijoada -= fila[i]\n\treturn quantidade_inicial - quantidade_feijoada\n\nassert quantos_comeram(10, [10, 10]) == 10\nassert quantos_comeram(12, [10, 10]) == 10\nassert quantos_comeram(2, [10, 10]) == 0\nassert quantos_comeram(5, [2, 3, 5]) == 5\n",
+      "name": "qntos_comeram.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquantos_comeram = getattr(undertest, 'quantos_comeram', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        assert quantos_comeram(10, [10, 10]) == 10\n        assert quantos_comeram(12, [10, 10]) == 10\n        assert quantos_comeram(2, [10, 10]) == 0\n        assert quantos_comeram(5, [2, 3, 5]) == 5\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8142314ff7d12660c5c09d0cb56b8603",
+  "iid": 5285219192012800,
+  "activity_revision": "1.0.1"
+}

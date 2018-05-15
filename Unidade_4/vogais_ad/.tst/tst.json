@@ -1,0 +1,14 @@
+{
+  "files": {
+    "vogais_ad.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Aluno: Walisson Nascimento de Farias - 117210716\n# Programa\u00e7\u00e3o I\n# Unidade: 4\tQuest\u00e3o: Palavras com Vogais Adjacentes\n\nquant_palavras = int(raw_input())\nvogais = 'aeiouAEIOU'\n\nquant = 0\nfor i in range(quant_palavras):\n\tpalavra = raw_input()\n\tfor i in range(len(palavra)):\n\t\tif palavra[i] in vogais and i != (len(palavra)-1):\n\t\t\tif palavra[i+1] in vogais:\n\t\t\t\tquant += 1\n\t\t\t\tbreak\n\nprint quant\n",
+      "name": "vogais_ad.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "94831b1891e773b5fcce0294063afc6f",
+  "iid": 5324256149766144,
+  "activity_revision": "1.2.0"
+}

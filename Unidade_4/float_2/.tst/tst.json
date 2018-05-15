@@ -1,0 +1,18 @@
+{
+  "files": {
+    "float_2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 4\tQuest\u00e3o: S\u00e9rie: Uma nova s\u00e9rie com floats\n\nfor i in range(4, 104):\n\tprint float(i)\n\tprint float(i)+0.5\n",
+      "name": "float_2.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 4,\n      \"vhalstead\": 4.75,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1aaddf85f6402254b21682e5b98ecff3",
+  "iid": 5252505332088832,
+  "activity_revision": "1.1.1"
+}

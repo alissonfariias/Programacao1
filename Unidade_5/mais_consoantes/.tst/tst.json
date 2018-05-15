@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_consoantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5 \t-\tQuest\u00e3o: Mais consoantes\n\nquant_vogais = 0\nquant_consoantes = 0\ncont = 0\nwhile True:\n\tpalavra = raw_input()\n\tquant_vogais = 0\n\tquant_consoantes = 0\n\tcont += 1\n\tfor i in palavra:\n\t\tif i in 'aeiouAEIOU':\n\t\t\tquant_vogais += 1\n\t\telse:\n\t\t\tquant_consoantes += 1\n\tif quant_consoantes > quant_vogais:\n\t\tbreak\n\t\nprint cont\n",
+      "name": "mais_consoantes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 16,\n      \"vhalstead\": 257.47,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "234ea467be30b9184e5aeac84bb716a8",
+  "iid": 6062412985794560,
+  "activity_revision": "1.0.1"
+}

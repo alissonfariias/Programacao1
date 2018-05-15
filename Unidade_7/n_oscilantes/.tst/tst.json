@@ -1,0 +1,14 @@
+{
+  "files": {
+    "n_oscilantes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Universidade Federal de Campina Grande\n# Per\u00edodo: 2017.2\n# Unidade: 7\tQuest\u00e3o: N\u00fameros Oscilantes\n\nentrada = raw_input()\n\ndef numero(entrada):\n\tif int(entrada[0]) % 2 == 0:\n\t\tvalor = 'p'\n\telse:\n\t\tvalor = 'i'\n\tfor i in range(1,len(entrada)):\n\t\tif int(entrada[i]) % 2 == 0 and valor == 'i':\n\t\t\tvalor = 'p'\n\t\telif int(entrada[i]) % 2 != 0 and valor == 'p':\n\t\t\tvalor = 'i'\n\t\telse:\n\t\t\treturn 'falso'\n\treturn 'verdadeiro'\n\nprint '{}: {} algarismos.'.format(numero(entrada), len(entrada))\n",
+      "name": "n_oscilantes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d1a3155fedc3241563a37754cab5d904",
+  "iid": 6182451818790912,
+  "activity_revision": "1.1.1"
+}

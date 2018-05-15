@@ -1,0 +1,24 @@
+{
+  "files": {
+    "soma_linha_coluna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 9\tQuest\u00e3o: Soma Linha e Coluna\n\ndef soma_linha_e_coluna(matriz,l,c):\n\t\n\tsoma = 0\n\tfor i in range(len(matriz[l])):\n\t\tif i != c:\n\t\t\tsoma += matriz[l][i]\n\t\n\tfor i in range(len(matriz)):\n\t\tfor j in range(len(matriz[i])):\n\t\t\tif j == c and i != l:\n\t\t\t\tsoma += matriz[i][j]\n\t\n\treturn soma\n\nmatriz = [\n    [2, 3, 5, 3, 1],\n    [3, 2, 1, 5, 6],\n    [3, 2, 3, 2, 1],\n]\n\nassert soma_linha_e_coluna(matriz,1,1) == 20\nassert soma_linha_e_coluna(matriz,0,0) == 18\nprint soma_linha_e_coluna(matriz,2,4)\n",
+      "name": "soma_linha_coluna.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_linha_e_coluna = getattr(undertest, 'soma_linha_e_coluna', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        matriz = [\n            [2, 3, 5, 3, 1],\n            [3, 2, 1, 5, 6],\n            [3, 2, 3, 2, 1],\n        ]\n\n    \n        assert soma_linha_e_coluna(matriz,1,1) == 20\n        assert soma_linha_e_coluna(matriz,0,0) == 18\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 38.04,\n      \"header\": 4\n    }\n  ]\n}",
+      "name": "qcheck.json"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "66bcb311b1e292f027e00b0b57fe82ac",
+  "iid": 5844334645608448,
+  "activity_revision": "1.0.1"
+}

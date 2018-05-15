@@ -1,0 +1,18 @@
+{
+  "files": {
+    "series.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: S\u00e9ries (302)\n\nfor i in range(302,-11,-3):\n\tprint i\n",
+      "name": "series.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1854d5eb15b9b1b935b9a60d97c23d7b",
+  "iid": 5878888697692160,
+  "activity_revision": "1.1.1"
+}

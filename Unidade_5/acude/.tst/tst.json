@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acude.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 5\tQuest\u00e3o: Limite a\u00e7ude\n\nlimite_superior = float(raw_input())\nnivel_atual = int(raw_input())\n\nif nivel_atual >= limite_superior:\n\tprint 'A\u00e7ude passou a liberar \u00e1gua.'\n\tprint 'N\u00edvel: %.2f' % nivel_atual\nelse:\n\tultrapassou = False\n\twhile ultrapassou == False:\n\t\tevento = raw_input().split()\n\t\tif evento[0] == 'chuva' or evento[0] == 'afluente':\n\t\t\tnivel_atual += int(evento[1])\n\t\t\tif nivel_atual >= limite_superior:\n\t\t\t\tultrapassou = True\n\t\tif evento[0] == 'demanda':\n\t\t\tnivel_atual -= int(evento[1])\n\t\t\tif nivel_atual < 0:\n\t\t\t\tnivel_atual = 0\n\t\n\tprint 'A\u00e7ude passou a liberar \u00e1gua.'\n\tprint 'N\u00edvel: %.2f' % nivel_atual\n\t\n",
+      "name": "acude.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4f7d2f0ff7be3b48be3aec6dee03f6d1",
+  "iid": 5217567115313152,
+  "activity_revision": "1.0.1"
+}

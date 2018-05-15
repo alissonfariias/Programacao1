@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 4.75,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "p_vogal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Primeira Vogal\n\npalavra = raw_input()\ntem_vogal = False\nfor i in range(len(palavra)):\n\tif palavra[i] in 'aeiouAEIOU' :\n\t\tvogal = palavra[i]\n\t\ttem_vogal = True\n\t\tbreak\n\t\t\nif tem_vogal == True:\n\tprint vogal\nelse:\n\tprint '-'\n",
+      "name": "p_vogal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e7192df58a113bbb66929a7ebe407460",
+  "iid": 4955541461794816,
+  "activity_revision": "1.1.3"
+}

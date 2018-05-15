@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qam.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Quem acertou menos\n\nnumero = int(raw_input())\n\nl = []\nmaximo = 0\naluno = 0\n\nfor i in range(numero):\n\tresultado = raw_input()\n\tcont = 0\n\tfor j in resultado:\n\t\tif j == 'f':\n\t\t\tcont += 1\n\tl.append(cont)\n\nfor e in range(len(l)):\n\tif l[e] > maximo:\n\t\tmaximo = l[e]\n\t\taluno = e + 1\nprint \"O aluno %i errou %i teste(s).\" % (aluno,maximo)\n",
+      "name": "qam.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 53.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8c9684c06afe9211a55fa754c2b978ae",
+  "iid": 5315938744270848,
+  "activity_revision": "1.0.1"
+}

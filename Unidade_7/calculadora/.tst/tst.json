@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calculadora.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Universidade Federal de Campina Grande\n# Per\u00edodo: 2017.2\n# Unidade: 7\tQuest\u00e3o: Calculadora de M\u00e9dias\n\nwhile True:\n\toperacao = raw_input().split()\n\tif operacao[0] == 'Q':\n\t\tbreak\n\tnumeros = raw_input().split()\n\tmult = 1\n\tsoma = 0\n\tsoma_i = 0\n\tfor i in operacao:\n\t\tif i == 'MA':\n\t\t\tfor i in numeros:\n\t\t\t\tsoma += float(i)\n\t\t\tmedia_a = soma / len(numeros)\n\t\t\tprint 'M\u00e9dia Aritm\u00e9tica: %.4f' % media_a\n\t\telif i == 'MG':\n\t\t\tfor j in numeros:\n\t\t\t\tmult *= float(j)\n\t\t\tmedia_g = mult ** (1.0 / (len(numeros)))\n\t\t\tprint 'M\u00e9dia Geom\u00e9trica: %.4f' % media_g\n\t\telif i == 'MH':\n\t\t\tfor k in numeros:\n\t\t\t\tsoma_i += 1.0/float(k)\n\t\t\tmedia_h = len(numeros) / soma_i\n\t\t\tprint 'M\u00e9dia Harm\u00f4nica: %.4f' % media_h\n\tprint '----'\n",
+      "name": "calculadora.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e106781de6a84c5cf2759a2ec8a9abf4",
+  "iid": 5519497846849536,
+  "activity_revision": "1.0.1"
+}

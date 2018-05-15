@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\npirueta\ncasa\nbola\nmaioria\ncanteiro\n",
+      "output": "3\n"
+    }
+  ]
+}

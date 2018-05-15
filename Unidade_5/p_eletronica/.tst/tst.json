@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p_eletronica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: Porta Eletr\u00f4nica\n\nlista_registros = []\nlista_contagens = []\n\nwhile True:\n\tdados = raw_input().split()\n\tif dados[0] == 'S':\n\t\tbreak\n\tif dados[0] == 'R':\n\t\tlista_registros.append(dados[1][0])\n\tif dados[0] == 'P':\n\t\tpesquisa = dados[1]\n\t\tcont = 0\n\t\tfor i in lista_registros:\n\t\t\tif i == pesquisa:\n\t\t\t\tcont += 1\n\t\tlista_contagens.append(cont)\n\nfor i in range(len(lista_contagens)):\n\tprint lista_contagens[i]\n",
+      "name": "p_eletronica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c131cbe7d86e51de253e7677780a31fd",
+  "iid": 5826458756841472,
+  "activity_revision": "1.0.4"
+}

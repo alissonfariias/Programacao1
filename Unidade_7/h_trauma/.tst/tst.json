@@ -1,0 +1,14 @@
+{
+  "files": {
+    "h_trauma.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 7\tQuest\u00e3o: Hospital de Trauma\n\npacien = []\nurgen = []\nvermelho = []\nlaranja = []\namarelo = []\nverde = []\nazul = []\nlista = []\n\nwhile True:\n\tpacientes = raw_input()\n\tif pacientes == 'fim':\n\t\tbreak\n\tpacientes = pacientes.split()\n\t\t\n\tpacien.append(pacientes[0])\n\turgen.append(pacientes[1])\n\nfor i in range(len(urgen)):\n\tif urgen[i] == 'vermelho':\n\t\tvermelho.append(pacien[i])\n\tif urgen[i] == 'laranja':\n\t\tlaranja.append(pacien[i])\n\tif urgen[i] == 'amarelo':\n\t\tamarelo.append(pacien[i])\n\tif urgen[i] == 'verde':\n\t\tverde.append(pacien[i])\n\tif urgen[i] == 'azul':\n\t\tazul.append(pacien[i])\n\t\t\n\nlista = vermelho + laranja + amarelo + verde + azul\n\nfor j in range(len(lista)):\n\tprint lista[j]\nprint '---'\nprint 'vermelho: %i' % len(vermelho)\nprint 'laranja: %i' % len(laranja)\nprint 'amarelo: %i' % len(amarelo)\nprint 'verde: %i' % len(verde)\nprint 'azul: %i' % len(azul)\nprint '---'\n",
+      "name": "h_trauma.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "03ed770012f6a420b45f597cc704dcd2",
+  "iid": 4926171737227264,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "karel.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 4\tQuest\u00e3o: Karel, o Rob\u00f4!\n\nx = 0\ny = 0\nwhile True:\n\tcomando = raw_input().split()\n\tlado = comando[0]\n\tmove = int(comando[1])\n\tif move == 0:\n\t\tprint 'Fim de jogo'\n\t\tbreak\n\tif lado == 'C':\n\t\ty += move\n\telif lado == 'B':\n\t\ty -= move\n\telif lado == 'E':\n\t\tx -= move\n\telif lado == 'D':\n\t\tx += move\n\tif (abs(x) * 2) == abs(y) and x != 0:\n\t\tprint 'Parab\u00e9ns, conquista do portal (%i, %i)' % (x, y)\n\t\tbreak\n\n",
+      "name": "karel.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ab37816075eaa809625cd401049c5908",
+  "iid": 6198119020625920,
+  "activity_revision": "1.0.1"
+}

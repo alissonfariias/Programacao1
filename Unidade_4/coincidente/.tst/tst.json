@@ -1,0 +1,18 @@
+{
+  "files": {
+    "coincidente.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Universidade Federal de Campina Grande\n# Per\u00edodo: 2017.2\n# Descarta Coincidente\n\nquant_numeros = raw_input()\n\ndescartados = []\nquant_descartados = 0\nlista = []\nfor i in range(int(quant_numeros)):\n\tnumero = raw_input()\n\tlista.append(numero)\n\tfor j in range(len(numero)):\n\t\tif int(numero[j]) == j:\n\t\t\tdescartados.append(numero)\n\t\t\tquant_descartados += 1\n\t\t\tbreak\n\nprint '---'\n\naceitos = []\nquant_aceitos = 0\nfor i in range(len(lista)):\n\tif lista[i] in descartados:\n\t\tpass\n\telse:\n\t\taceitos.append(lista[i])\n\t\tquant_aceitos += 1\n\nprint '%i aceito(s)' % quant_aceitos\nfor i in range(len(aceitos)):\n\tprint aceitos[i]\n\nprint '%i descartado(s)' % quant_descartados\nfor i in range(len(descartados)):\n\tprint descartados[i]\n",
+      "name": "coincidente.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "622b8e8fec0d2e2b53a12360c4206cd9",
+  "iid": 5845378154889216,
+  "activity_revision": "1.0.1"
+}

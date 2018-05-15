@@ -1,0 +1,18 @@
+{
+  "files": {
+    "produto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Produto de Dois Somat\u00f3rios\n\nnumero = raw_input()\n\nsoma_dos_pares = 0\nsoma_dos_impares = 0\nfor i in range(len(numero)):\n\tif i % 2 == 0:\n\t\tsoma_dos_pares += int(numero[i])\n\telif i % 2 != 0:\n\t\tsoma_dos_impares += int(numero[i])\n\nresultado = soma_dos_pares * soma_dos_impares\nprint '%05.i' % resultado\n",
+      "name": "produto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 1,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1f0862c5130062be3d19e5e2f6e7e895",
+  "iid": 5838338200174592,
+  "activity_revision": "1.0.1"
+}

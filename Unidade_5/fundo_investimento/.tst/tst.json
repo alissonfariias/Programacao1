@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "fundo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 5\tQuest\u00e3o: Fundo de Investimento\n\nsoma = 0.0\ncont = 0\nlista = []\nwhile True:\n\tcont += 1\n\tsequencia = float(raw_input())\n\tlista.append(sequencia)\n\tsoma += sequencia\n\tmedia = soma / cont\n\tif media > sequencia:\n\t\tsoma = 0.0\n\t\tfor e in range(len(lista)):\n\t\t\tif e != (len(lista)-1):\n\t\t\t\tsoma += lista[e]\n\t\tnova_media = soma / (len(lista)-1)\n\t\tprint 'Saldo total do FIS: R$%.2f.' % soma \n\t\tprint 'M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.' % nova_media\n\t\tbreak\n",
+      "name": "fundo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "56ad5f3154def408a5c3d925d8eab6f6",
+  "iid": 6636620820250624,
+  "activity_revision": "1.0.1"
+}

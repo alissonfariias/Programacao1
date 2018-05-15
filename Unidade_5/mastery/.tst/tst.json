@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mastery.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Matr\u00edcula: 117210716\n# Aluno: Walisson Nascimento de Farias\n# Atividade: Mastery Learning\n# Disciplina : Programa\u00e7\u00e3o 1\n# Per\u00edodo : 2017.2\n# Universidade Federal de Campina Grande\n\nprint \"Mastery Learning\"\nprint \"C\u00e1lculo da nota na unidade\\n\"\n\nnota1 = float(raw_input(\"Nota? \"))\nnota2 = float(raw_input(\"Nota? \"))\n\nmaior_nota1 = nota1\nmaior_nota2 = nota2\n\nif nota2 > nota1:\n\tmaior_nota1= nota2\n\tmaior_nota2 = nota1\n\nmedia = (maior_nota1 + maior_nota2) / 2\n\ncont_nota = 2\nsituacao = 'cursando'\nif nota1 >= 7 or nota2 >= 7:\n\t\tsituacao = 'aprovado'\npenalizacao = 0\nprint 'M\u00e9dia: %.1f (%s)' % (media,situacao)\nprint 'Penaliza\u00e7\u00e3o: %.1f\\n' % (penalizacao)\n\nwhile True:\n\tif nota1 >= 7 or nota2 >= 7:\n\t\tbreak\n\tnota = float(raw_input(\"Nota? \"))\n\tcont_nota += 1\n\tif nota > maior_nota1:\n\t\tmaior_nota2 = maior_nota1\n\t\tmaior_nota1 = nota\n\n\tif cont_nota > 2:\n\t\tpenalizacao += 0.5\n\t\n\tif nota > 2 and nota < 7:\n\t\tmedia = (maior_nota1 + maior_nota2) / 2\n\t\tprint 'M\u00e9dia: %.1f (%s)' % (media,situacao)\n\t\tprint 'Penaliza\u00e7\u00e3o: %.1f\\n' % (penalizacao)\n\t\t\n\tif nota >= 7:\n\t\tsituacao = 'aprovado'\n\t\tmedia = (maior_nota1 + maior_nota2) / 2\n\t\tprint 'M\u00e9dia: %.1f (%s)' % (media,situacao)\n\t\tprint 'Penaliza\u00e7\u00e3o: %.1f\\n' % (penalizacao)\n\n\tif nota >= 7:\n\t\tbreak\n\nprint \"===\"\nprint \"Notas v\u00e1lidas: %.1f e %.1f\" % (maior_nota1,maior_nota2)\nprint \"M\u00e9dia parcial na unidade: %.1f\" % (media)\nprint \"Penaliza\u00e7\u00f5es: %.1f\" % (penalizacao)\nprint \"M\u00e9dia final na unidade: %.1f\" % (media - penalizacao)\n",
+      "name": "mastery.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 30,\n      \"vhalstead\": 267.35,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6c36c169eae44af9d451c8bb06bb7605",
+  "iid": 5799306208477184,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nidosos_inicio = getattr(undertest, 'idosos_inicio', None)\n\n\nclass AcceptanceTests(unittest.TestCase):\n\n   def test_exemplo(self):\n\t\tfila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\n\t\tself.assertEquals( idosos_inicio(fila), None )\n\t\tself.assertEquals( fila, [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "mais_velhos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 6, Quest\u00e3o: Mais Velhos Primeiro\n\ndef idosos_inicio(fila):\n\t\n\tindice = 0\n\tfor i in range(len(fila)):\n\t\tif fila[i] >= 60:\n\t\t\tfila[i], fila[indice] = fila[indice], fila[i]\n\t\t\tindice += 1\n\t\n\tprint fila\n\nfila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\nidosos_inicio(fila)\nassert fila == [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34]\n",
+      "name": "mais_velhos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "84e73f22b0c291df6b49cd88f1ad5971",
+  "iid": 6342504580382720,
+  "activity_revision": "1.0.0"
+}

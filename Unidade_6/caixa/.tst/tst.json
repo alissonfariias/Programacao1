@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_registradora = getattr(undertest, 'caixa_registradora', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "caixa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 6, Quest\u00e3o: Caixa Registradora\n\ndef caixa_registradora(lista_valores, meta):\n\t\n\tsoma_vendas = 0\n\tsoma_comissao = 0\n\tfor i in range(len(lista_valores)):\n\t\tsoma_vendas += lista_valores[i]\n\t\tif lista_valores[i] < 1000:\n\t\t\tcomissao = lista_valores[i] / 100 * 5\n\t\t\tsoma_comissao += comissao\n\t\telif lista_valores[i] >= 1000 and lista_valores[i] < 5000:\n\t\t\tcomissao = lista_valores[i] / 100 * 10\n\t\t\tsoma_comissao += comissao\n\t\telif lista_valores[i] >= 5000:\n\t\t\tcomissao = lista_valores[i] / 100 * 15\n\t\t\tsoma_comissao += comissao\n\t\n\tif (soma_vendas - comissao) >= meta:\n\t\tsituacao = 'Lucro'\n\telif (soma_vendas - comissao) < meta:\n\t\tsituacao = 'Prejuizo'\n\t\n\tresultado = []\n\tresultado.append(soma_vendas)\n\tresultado.append(soma_comissao)\n\tresultado.append(situacao)\n\treturn resultado\n\nassert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n",
+      "name": "caixa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0a0b27e694bde8975f371de63e885ca6",
+  "iid": 6374857864380416,
+  "activity_revision": "1.0.1"
+}

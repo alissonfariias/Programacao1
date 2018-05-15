@@ -1,0 +1,19 @@
+{
+  "files": {
+    "eli.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 8\tQuest\u00e3o: Elimina Menores\n\ndef elimina_menores(num, lista):\n\tnums_removidos = 0\n\tfor i in range(len(lista)-1,-1,-1):\n\t\tif lista[i] < num:\n\t\t\tlista.pop(i)\n\t\t\tnums_removidos += 1\n\treturn nums_removidos\n\nlista1 = [100,200,300,400]\nassert elimina_menores(100, lista1) == 0\nassert lista1 == [100,200,300,400]\n\nlista2 = [3,5,1,7,10,9]\nassert elimina_menores(4, lista2) == 2\nassert lista2 == [5,7,10,9]\n",
+      "name": "eli.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nelimina_menores = getattr(undertest, 'elimina_menores', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        lista1 = [100,200,300,400]\n        assert elimina_menores(100, lista1) == 0\n        assert lista1 == [100,200,300,400]\n        \n    def test_exemplo_2(self):\n        lista2 = [3,5,1,7,10,9]\n        assert elimina_menores(4, lista2) == 2\n        assert lista2 == [5,7,10,9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a6da58718deb868a61bb3d4376dcecc4",
+  "iid": 6351747719102464,
+  "activity_revision": "1.0.0"
+}

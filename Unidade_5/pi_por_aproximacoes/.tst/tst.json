@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pi.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 5\tQuest\u00e3o: Pi por aproxima\u00e7\u00f5es\n\na = float(raw_input())\n\ncont1 = 0\ncont2 = 1\npi = 0\npi2 = 0\nwhile True:\n\tif cont1 % 2 == 0:\n\t\tpi += (1.0 / cont2)\n\telif cont1 % 2 != 0:\n\t\tpi -= (1.0 / cont2)\n\t\n\tprint '%.6f' % (4*pi)\n\t\n\tif abs(pi2 - 4 * pi) <= a:\n\t\tbreak\n\t\n\tpi2 = 4 * pi\n\tcont1 += 1\n\tcont2 += 2\n",
+      "name": "pi.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 131.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f81a79b41e4a1aeb58c3a186b5c9e57b",
+  "iid": 4976002182676480,
+  "activity_revision": "1.0.1"
+}
