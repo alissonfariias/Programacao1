@@ -1,0 +1,18 @@
+{
+  "files": {
+    "aluno.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Ciclo Trigonom\u00e9trico\n\nangulo = float(raw_input())\t\nif angulo <= 360:\n\tif angulo >= 1 and angulo <= 89:\n\t\tprint 'Quadrante 1' \n\telif angulo > 90 and angulo < 180:\n\t\tprint 'Quadrante 2'\n\telif angulo > 180 and angulo < 270:\n\t\tprint 'Quadrante 3'\n\telif angulo > 270 and angulo < 360:\n\t\tprint 'Quadrante 4'\n\telse:\n\t\tprint 'Sobre eixos'\nif angulo > 360:\n\tnum2 = angulo % 360\t\n\tif num2 >= 1 and num2 <= 89:\n\t\tprint 'Quadrante 1'\n\telif num2 > 90 and num2 < 180:\n\t\tprint 'Quadrante 2'\n\telif num2 > 180 and num2 < 270:\n\t\tprint 'Quadrante 3'\n\telif num2 > 270 and num2 < 360:\n\t\tprint 'Quadrante 4'\n\telse:\n\t\tprint 'Sobre eixos'\n",
+      "name": "aluno.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "23c160f751cbfc0b86f9869a9d6a2bd4",
+  "iid": 6275945002434560,
+  "activity_revision": "1.0.20"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "metros_km.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Metros em Km\n\nmetros = int(raw_input())\n\nkilometros = metros / float(1000)\n\nprint \"%i m = %.2f km\" % (metros,kilometros)\n",
+      "name": "metros_km.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "93cc9cb43c003decf5734d396299469c",
+  "iid": 5189922927411200,
+  "activity_revision": "1.1.1"
+}

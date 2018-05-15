@@ -1,0 +1,18 @@
+{
+  "files": {
+    "grep.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Grep\n\npalavra_chave = str(raw_input())\nn = int(raw_input())\n\nfor i in range(n):\n\tfrase = str(raw_input())\n\tif palavra_chave in frase:\n\t\tprint frase\n",
+      "name": "grep.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 4.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "616a42ce1ff468768dc64d866ff38acc",
+  "iid": 4817717571878912,
+  "activity_revision": "2.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "13_nada.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\nif numero1 == 13:\n\tsoma = 0\n\tprint soma\nelif numero2 == 13:\n\tsoma = numero1\n\tprint soma\nelif numero3 == 13:\n\tif numero1 + numero2 == 13:\n\t\tprint 0\n\telse:\n\t\tsoma = numero1 + numero2\n\t\tprint soma\nelif numero1 + numero2 + numero3 == 13:\n\tsoma = 0\n\tprint soma\nelse:\n\tsoma = numero1 + numero2 + numero3\n\tprint soma\n",
+      "name": "13_nada.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 107.55,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5495480a8ef8f42f19ee28bf2bb38581",
+  "iid": 4637918270324736,
+  "activity_revision": "1.1.3"
+}

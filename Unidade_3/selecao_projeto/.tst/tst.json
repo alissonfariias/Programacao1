@@ -1,0 +1,18 @@
+{
+  "files": {
+    "selecao_projeto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\ncre = float(raw_input())\nexperiencia = int(raw_input())\nnota_entrevista = float(raw_input())\nif cre < 7 and experiencia < 6:\n\tprint 'Candidato eliminado. CRE e experi\u00eancia abaixo do limite.'\nelif cre < 7 and experiencia >= 6:\n\tprint 'Candidato eliminado. CRE abaixo do limite.'\nelif cre >= 7 and experiencia < 6:\n\tprint 'Candidato eliminado. Experi\u00eancia abaixo do limite.'\nelif cre >= 7 and experiencia > 6:\n\tif nota_entrevista <= 3:\n\t\tprint 'Candidato classificado.'\n\telif nota_entrevista > 3:\n\t\tprint 'Candidato aprovado.'\n",
+      "name": "selecao_projeto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "50269ebb142d48773e7a490090d628a3",
+  "iid": 6724243194642432,
+  "activity_revision": "1.0.1"
+}

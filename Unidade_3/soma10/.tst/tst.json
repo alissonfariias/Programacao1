@@ -1,0 +1,18 @@
+{
+  "files": {
+    "soma10.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Soma 10\n\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\n\nif numero1 == 10 or numero2 == 10:\n\tprint 'SIM'\nelif numero1 + numero2 == 10:\n\tprint 'SIM'\nelse:\n\tprint 'NAO'\n",
+      "name": "soma10.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 53.15,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dee865c30b435ffa5d80c0efb395a509",
+  "iid": 5807742564433920,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "c_divisiveis.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Conta Divis\u00edveis\n\nk = int(raw_input())\nn = int(raw_input())\n\ncont = 0\nfor i in range(n):\n\tnumero = raw_input()\n\tif int(numero) % k == 0:\n\t\tcont += 1\n\telse:\n\t\tpass\n\nporcentagem = cont * 100.0 / n\nprint '%i (%.1f%%)' % (cont,porcentagem)\n",
+      "name": "c_divisiveis.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 72.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2906dd7c732baa9723715f382ea76afb",
+  "iid": 5660524305973248,
+  "activity_revision": "1.1.1"
+}

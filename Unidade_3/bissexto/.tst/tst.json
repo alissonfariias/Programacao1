@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 127.44,\n      \"header\": 1\n    }\n  ]\n}"
+    },
+    "bissexto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Nome: Walisson Nascimento de Farias\n# Ci\u00eancias da Computa\u00e7\u00e3o UFCG - 2017.2\n# Matr\u00edcula: 117210716\n\nano = int(raw_input())\n\nif ano % 400 == 0:\n\tprint \"%i \u00e9 bissexto\" % ano\nelif ano % 4 == 0 and ano % 100 != 0:\n\tprint \"%i \u00e9 bissexto\" % ano\nelse:\n\tprint \"%i n\u00e3o \u00e9 bissexto\" % ano\n",
+      "name": "bissexto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fbe28f28755a6b697cf7533b56b06faa",
+  "iid": 4982281525526528,
+  "activity_revision": "1.1.2"
+}

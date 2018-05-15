@@ -1,0 +1,14 @@
+{
+  "files": {
+    "fracionaria.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nnumero = float(raw_input())\nnumero_conv = numero % 1\nprint numero_conv\n",
+      "name": "fracionaria.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3a61451d56bdc17975a9b42c21a44161",
+  "iid": 6461585031692288,
+  "activity_revision": "1.1.0"
+}

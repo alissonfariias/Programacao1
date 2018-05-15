@@ -1,0 +1,18 @@
+{
+  "files": {
+    "concurso.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nnota_escrita1 = float(raw_input())\nnota_didatica1 = float(raw_input())\nnota_titulacao1 = float(raw_input())\nidade1 = int(raw_input())\nnota_escrita2 = float(raw_input())\nnota_didatica2 = float(raw_input())\nnota_titulacao2 = float(raw_input())\nidade2 = int(raw_input())\n\npeso_notaescrita1 = nota_escrita1 * 0.3\npeso_notadidatica1 = nota_didatica1 * 0.4\npeso_notatitulacao1 = nota_titulacao1 * 0.3\npeso_notaescrita2 = nota_escrita2 * 0.3\npeso_notadidatica2 = nota_didatica2 * 0.4\npeso_notatitulacao2 = nota_titulacao2 * 0.3\nmedia1 = peso_notaescrita1 + peso_notadidatica1 + peso_notatitulacao1\nmedia2 = peso_notaescrita2 + peso_notadidatica2 + peso_notatitulacao2\n\nif media1 > media2:\n\tprint 'O primeiro candidato foi aprovado com m\u00e9dia %.1f.' % media1\nelif media1 < media2:\n\tprint 'O segundo candidato foi aprovado com m\u00e9dia %.1f.' % media2\nelif media1 == media2:\n\tif idade1 > idade2:\n\t\tprint 'O primeiro candidato foi aprovado com m\u00e9dia %.1f.' % media1\n\telif idade1 < idade2:\n\t\tprint 'O segundo candidato foi aprovado com m\u00e9dia %.1f.' % media2\n\telif idade1 == idade2:\n\t\tprint 'Empate.'\n",
+      "name": "concurso.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 262.33,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0a83c14bbd1fa6cc5f08ad509a76b5af",
+  "iid": 5441622103818240,
+  "activity_revision": "1.0.2"
+}

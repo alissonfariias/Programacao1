@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fatorial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Nome: Walisson Nascimento de Farias\n# Ci\u00eancias da Computa\u00e7\u00e3o UFCG - 2017.2\n# Matr\u00edcula: 117210716\n# Unidade: 4\n# Fatorial\n\nn = int(raw_input())\n\nn_fat = 1\nfor i in range(2,n+1):\n\tn_fat = n_fat * i\n\nprint n_fat\n",
+      "name": "fatorial.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eeeb482f6f683282309714ffad77c60a",
+  "iid": 5794491113930752,
+  "activity_revision": "1.1.1"
+}

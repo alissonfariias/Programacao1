@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Calcula DV\n\nnumero = raw_input()\nsoma_par = 0\nsoma_impar = 0\nfor i in range(len(numero)):\n\tif i % 2 == 0:\n\t\tsoma_par += int(numero[i])\n\telse:\n\t\tsoma_impar += int(numero[i])\n\ncalculo = soma_par * soma_impar\nresto = calculo % 11\nif resto == 10:\n\tprint '%s-X' % numero\nelse:\n\tprint '%s-%i' % (numero,resto)\n",
+      "name": "dv.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "960355abb3f6f01dda613c4b5bc102a4",
+  "iid": 5865983797362688,
+  "activity_revision": "1.1.2"
+}

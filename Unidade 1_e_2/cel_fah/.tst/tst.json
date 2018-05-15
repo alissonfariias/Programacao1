@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cel_fah.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Celsius Fahrenheit\n\ncelsius = float(raw_input())\n\nfahrenheit = 1.8 * celsius + 32\n\nprint fahrenheit\n",
+      "name": "cel_fah.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "889edcd2630a967fe6ed6b6ea2d79c6a",
+  "iid": 5036572596502528,
+  "activity_revision": "1.1.8"
+}

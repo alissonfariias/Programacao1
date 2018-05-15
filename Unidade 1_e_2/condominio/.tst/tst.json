@@ -1,0 +1,14 @@
+{
+  "files": {
+    "condominio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Constru\u00e7\u00e3o do Condom\u00ednio\n\nlado1_terreno = float(raw_input())\nlado2_terreno = float(raw_input())\narea_casas = float(raw_input())\n\nquantidade = float(lado1_terreno * lado2_terreno)\nquantidade2 = quantidade / area_casas\n\nprint \"%i casa(s) pode(m) ser constru\u00edda(s) no terreno.\" % quantidade2\n",
+      "name": "condominio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6f1c12103d7cd19d9628885ff880e841",
+  "iid": 5548329626763264,
+  "activity_revision": "1.1.0"
+}

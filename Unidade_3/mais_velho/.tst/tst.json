@@ -1,0 +1,18 @@
+{
+  "files": {
+    "mais_velho.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Nome: Walisson Nascimento de Farias\n# Ci\u00eancias da Computa\u00e7\u00e3o UFCG - 2017.2\n# Matr\u00edcula: 117210716\n\nnome1 = str(raw_input())\ndia1 = int(raw_input())\nmes1 = int(raw_input())\nano1 = int(raw_input())\nnome2 = str(raw_input())\ndia2 = int(raw_input())\nmes2 = int(raw_input())\nano2 = int(raw_input())\n\nif ano1 < ano2:\n\tprint nome1\nelif ano1 < ano2 and mes1 < mes2:\n\tprint nome1\nelif ano1 < ano2 and mes1 < mes2 and dia1 < dia2:\n\tprint nome1\nelif ano1 == ano2 and mes1 < mes2:\n\tprint nome1\nelif ano1 == ano2 and mes1 == mes2 and dia1 < dia2:\n\tprint nome1\nelif ano1 == ano2 and mes1 == mes2 and dia1 == dia2:\n\tprint \"nenhuma\"\nelse:\n\tprint nome2\n",
+      "name": "mais_velho.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 54.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b07c56f51cec8349fef803edea16226b",
+  "iid": 5046572354109440,
+  "activity_revision": "1.0.2"
+}

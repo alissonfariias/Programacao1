@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_ponderada.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\npeso1 = float(raw_input())\npeso2 = float (raw_input())\npeso3 = 100 - peso1 - peso2\nprint \"M\u00e9dia Final: %.1f\" % ((nota1*peso1/100) + (nota2*peso2)/100 + (nota3*peso3)/100)\n",
+      "name": "media_ponderada.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a5534d38abab89479d535f970aa63cb9",
+  "iid": 5007253807562752,
+  "activity_revision": "1.1.1"
+}

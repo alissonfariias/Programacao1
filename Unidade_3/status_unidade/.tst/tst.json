@@ -1,0 +1,18 @@
+{
+  "files": {
+    "status_unidade.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nmtp = int(raw_input())\n\nif mtp < 2:\n\tnota1 = float(raw_input())\n\tmedia = nota1 / 1\n\tprint media\n\tprint \"Aluno ainda n\u00e3o aprovado na unidade\"\n\nelif mtp == 2:\n\tnota1 = float(raw_input())\n\tnota2 = float(raw_input())\n\tmedia = (nota1 + nota2) / 2\n\tif media < 6.0:\n\t\tprint media\n\t\tprint \"Aluno ainda n\u00e3o aprovado na unidade\"\n\telse:\n\t\tprint media\n\t\tprint \"Aluno aprovado na unidade\"\n\nelif mtp > 2:\n\tnota1 = float(raw_input())\n\tnota2 = float(raw_input())\n\tnota3 = float(raw_input())\n\tmedia = (nota1 + nota2 + nota3) / 3\n\tmedia_nova = media - 0.5\n\tprint media_nova\n\tif media_nova < 6.0:\n\t\tprint \"Aluno ainda n\u00e3o aprovado na unidade\"\n\telse:\n\t\t\"Aluno aprovado na unidade\"\n",
+      "name": "status_unidade.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 147.16,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6782be7058905660362ef14667bca5b9",
+  "iid": 6012897289306112,
+  "activity_revision": "1.0.2"
+}

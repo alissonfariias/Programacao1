@@ -1,0 +1,18 @@
+{
+  "files": {
+    "herao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Her\u00e3o\n\na = int(raw_input())\nl = []\n\nfor i in range(a):\n\ta,b,c = raw_input().split()\n\ta,b,c = float(a), float(b), float(c)\n\tsoma = (a+b+c) / 2.0\n\tarea = (soma * (soma -a) * (soma - b) * (soma - c)) ** 0.5\n\tl.append(area)\n\t\ncont = 0\nm = 0\n\nfor i in range(len(l)):\n\tprint '\u00c1rea {}: {:.2f}'.format(i + 1, l[i])\n\tif l[i] > 100:\n\t\tcont += 1\n\t\tm += l[i]\n\nif cont > 0:\n\tm = float(m) / cont\n\tprint 'N\u00famero maiores: {:.0f}, \u00e1rea m\u00e9dia: {:.2f}'.format(cont, float(m))\n",
+      "name": "herao.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 230.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "294a5b5b0305663977d6752afb83950b",
+  "iid": 5704697037979648,
+  "activity_revision": "1.2.0"
+}

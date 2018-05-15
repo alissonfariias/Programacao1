@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 6,\n      \"vhalstead\": 49.83,\n      \"header\": 9\n    }\n  ]\n}"
+    },
+    "e_dobro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nif numero1 * 2 == numero2 or numero2 * 2 == numero1:\n\tprint 'SIM'\nelse:\n\tprint 'NAO'\n",
+      "name": "e_dobro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f09267ad18fe2eb907c4304f65afe4be",
+  "iid": 5896441960595456,
+  "activity_revision": "1.0.3"
+}

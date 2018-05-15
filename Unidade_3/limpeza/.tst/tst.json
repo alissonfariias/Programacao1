@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limpeza.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\nservico = int(raw_input())\nif servico == 1:\n\ttamanho_tanque = int(raw_input())\n\tpreco = 80 * tamanho_tanque\n\tif preco >= 200:\n\t\tprint 'R$ %2.f,00\\nBrinde!' % preco\n\tif preco < 200:\n\t\tprint 'R$ %2.f,00' % preco\nelif servico == 2:\n\ttamanho_tanque = int(raw_input())\n\tpreco = 50 * tamanho_tanque\n\tif preco >= 200:\n\t\tprint 'R$ %2.f,00\\nBrinde!' % preco\n\tif preco < 200:\n\t\tprint 'R$ %2.f,00' % preco\nelif servico == 3:\n\tprint 'R$ 50,00'\n",
+      "name": "limpeza.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 66.61,\n      \"header\": 2\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0229a970784bfd8708fcb31e06694457",
+  "iid": 6622861590528000,
+  "activity_revision": "1.0.3"
+}

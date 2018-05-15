@@ -1,0 +1,18 @@
+{
+  "files": {
+    "sm_sm.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\nnumero4 = int(raw_input())\n\nif numero1 < numero2 and numero3 and numero4:\n\tif numero2 < numero3 and numero4:\n\t\tsegundomenor = numero2\n\telif numero3 < numero2 and numero4:\n\t\tsegundomenor = numero3\n\telif numero4 < numero2 and numero3:\n\t\tsegundomenor = numero4\nelif numero2 < numero1 and numero3 and numero4:\n\tif numero1 < numero3 and numero4:\n\t\tsegundomenor = numero1\n\telif numero3 < numero1 and numero4:\n\t\tsegundomenor = numero3\n\telif numero4 < numero1 and numero3:\n\t\tsegundomenor = numero3\nelif numero3 < numero1 and numero2 and numero4:\n\tif numero1 < numero2 and numero4:\n\t\tsegundomenor = numero1\n\telif numero2 < numero1 and numero4:\n\t\tsegundomenor = numero2\n\telif numero4 < numero1 and numero2:\n\t\tsegundomenor = numero4\nelif numero4 < numero1 and numero2 and numero3:\n\tif numero1 < numero2 and numero3:\n\t\tsegundomenor = numero1\n\telif numero2 < numero1 and numero3:\n\t\tsegundomenor = numero2\n\telif numero3 < numero1 and numero2:\n\t\tsegundomenor = numero3\n\nif numero1 > numero2 and numero3 and numero4:\n\tif numero2 > numero3 and numero4:\n\t\tsegundomaior = numero2\n\telif numero3 > numero2 and numero4:\n\t\tsegundomaior = numero3\n\telif numero4 > numero2 and numero3:\n\t\tsegundomaior = numero4\nelif numero2 > numero1 and numero3 and numero4:\n\tif numero1 > numero3 and numero4:\n\t\tsegundomaior = numero1\n\telif numero3 > numero1 and numero4:\n\t\tsegundomaior = numero3\n\telif numero4 > numero1 and numero3:\n\t\tsegundomaior = numero3\nelif numero3 > numero1 and numero2 and numero4:\n\tif numero1 > numero2 and numero4:\n\t\tsegundomaior = numero1\n\telif numero2 > numero1 and numero4:\n\t\tsegundomaior = numero2\n\telif numero4 > numero1 and numero2:\n\t\tsegundomaior = numero4\nelif numero4 > numero1 and numero2 and numero3:\n\tif numero1 > numero2 and numero3:\n\t\tsegundomaior = numero1\n\telif numero2 > numero1 and numero3:\n\t\tsegundomaior = numero2\n\telif numero3 > numero1 and numero2:\n\t\tsegundomaior = numero3\n\nprint 'Considerando os n\u00fameros %i, %i, %i e %i' % (numero1, numero2, numero3, numero4)\nprint 'O segundo menor n\u00famero \u00e9 %i' % segundomenor\nprint 'O segundo maior n\u00famero \u00e9 %i' % segundomaior\n",
+      "name": "sm_sm.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 37,\n      \"vhalstead\": 147.15,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "22d6efb4807a25cc5234c53db793bfe2",
+  "iid": 6131235449470976,
+  "activity_revision": "1.0.1"
+}

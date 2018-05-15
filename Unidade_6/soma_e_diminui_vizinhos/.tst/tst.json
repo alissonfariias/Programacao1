@@ -1,0 +1,17 @@
+{
+  "files": {
+    "coincidente.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 6, Quest\u00e3o: Soma e Diminui Vizinhos!\n\nquant_numeros = int(raw_input())\n\ndescartados = []\naceitos = []\nfor i in range(quant_numeros):\n\tseq = raw_input()\n\tfor i in range(len(seq)):\n\t\tif int(seq[i]) == i:\n\t\t\tdescartados.append(seq)\n\t\telif int(seq[i]) != i:\n\t\t\t\n",
+      "name": "coincidente.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "iid": 5845378154889216,
+  "kind": "assignment",
+  "activity_revision": "1.0.1",
+  "name": null
+}

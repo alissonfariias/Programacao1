@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "vouc.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Classifica Letra como Vogal ou Consoante\n\npalavra = str(raw_input())\nfor i in palavra:\n\tif i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u' or i == 'A' or i == 'E' or i == 'I' or i == 'O' or i == 'U':\n\t\tprint '<%s> sim' % i\n\telse:\n\t\tprint '<%s> nao' % i\n",
+      "name": "vouc.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b3d66585f095c7a1f67e28b9ac5bafed",
+  "iid": 5278567562739712,
+  "activity_revision": "1.0.2"
+}

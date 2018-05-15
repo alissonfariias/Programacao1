@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pedagio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nveiculo = str(raw_input())\nif veiculo == 'Autom\u00f3vel utilit\u00e1rio':\n\tprint 'Valor a pagar: R$ 11.40.'\nelif veiculo == '\u00d4nibus':\n\tquant_eixos_onibus = float(raw_input())\n\tvalor_onibus = quant_eixos_onibus * 11.40\n\tprint 'Valor a pagar: R$ %.2f.' % valor_onibus\nelif veiculo == 'Caminh\u00e3o':\n\tquant_eixos_caminhao = float(raw_input())\n\tvalor_caminhao = quant_eixos_caminhao * 9.60\n\tprint 'Valor a pagar: R$ %.2f.' % valor_caminhao\nelif veiculo == 'Motocicleta':\n\tprint 'Valor a pagar: R$ 5.70.'\nelse:\n\tprint 'Ve\u00edculo n\u00e3o cadastrado.'\n",
+      "name": "pedagio.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 15,\n      \"vhalstead\": 93.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ac34a15c9286eca3d56fa3c6de2b1f03",
+  "iid": 5848711183728640,
+  "activity_revision": "1.0.2"
+}

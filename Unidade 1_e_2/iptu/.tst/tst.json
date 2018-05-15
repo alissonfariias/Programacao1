@@ -1,0 +1,14 @@
+{
+  "files": {
+    "iptu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# IPTU\n\narea_casa = float(raw_input('\u00c1rea constru\u00edda? '))\naliquota = float(raw_input('Al\u00edquota? '))\n\niptu = area_casa * aliquota + 35.00\nquota_unica = iptu * 0.75\nseis_parcelas_total = iptu * 0.95\nseis_parcelas_valor = seis_parcelas_total / 6\ndez_parcelas_total = iptu\ndez_parcelas_valor = iptu / 10\n\nprint 'IPTU: R$ %.2f' % iptu\nprint ''\nprint 'Pagamento:'\nprint '1. Quota \u00fanica. R$ %.2f' % quota_unica\nprint '2. Em 6 parcelas. Total: R$ %.2f' % seis_parcelas_total\nprint '   6 x R$ %.2f' % seis_parcelas_valor\nprint '3. Em 10 parcelas. Total: R$ %.2f' % dez_parcelas_total\nprint '   10 x R$ %.2f' % dez_parcelas_valor\n",
+      "name": "iptu.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a980fd1110355e529fe4370551cf6099",
+  "iid": 6444989009625088,
+  "activity_revision": "1.1.1"
+}

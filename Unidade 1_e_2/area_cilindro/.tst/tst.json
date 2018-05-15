@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_cilindro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nprint 'C\u00e1lculo da Superf\u00edcie de um Cilindro\\n---'\ndiametro = float(raw_input('Medida do di\u00e2metro? '))\naltura = float(raw_input('Medida da altura? '))\nraio = diametro / 2.0\nimport math\na_base1 = math.pi * (raio ** 2.0)\na_base2 = math.pi * (raio ** 2.0)\nperimetro = (math.pi * 2.0) * raio\na_lateral = altura * perimetro\na_cilindro = a_base1 + a_base2 + a_lateral\nprint '---\\n\u00c1rea calculada: %.2f' % a_cilindro\n",
+      "name": "area_cilindro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d5a2eb7612f06b95790c4a864a0680ef",
+  "iid": 6434179382247424,
+  "activity_revision": "1.1.0"
+}

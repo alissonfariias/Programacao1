@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nsalario_bruto = float(raw_input())\nhoras_de_trabalho = int(raw_input())\nprint \"Sal\u00e1rio Bruto =\", salario_bruto\nhora_bruta = salario_bruto / horas_de_trabalho\nprint \"Hora Bruta =\", hora_bruta\ndesconto_ir = salario_bruto*11/100\nprint \"Desconto IR =\", desconto_ir\ndesconto_inss = salario_bruto*8/100\nprint \"Desconto INSS =\", desconto_inss\nsindicato = salario_bruto*5/100\nprint \"Desconto Sindicato =\", sindicato\nsalario_liquido = salario_bruto - desconto_ir - desconto_inss - sindicato\nprint \"Sal\u00e1rio L\u00edquido =\", salario_liquido\nhora_liquida = salario_liquido / horas_de_trabalho\nprint \"Hora L\u00edquida =\", hora_liquida\n",
+      "name": "salario.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2dcfae2f1d235fa7d37d3d8edf9f0311",
+  "iid": 5256430630207488,
+  "activity_revision": "1.0.3"
+}

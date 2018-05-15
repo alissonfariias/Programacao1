@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conjuntos_mais.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade: 5, Quest\u00e3o: Conjunto com mais elementos\n\ncont = 0\nlista = []\nwhile True:\n\tnumero = raw_input()\n\tcont += 1\n\tif numero == 'fim':\n\t\tbreak\n\tif int(numero) < 0:\n\t\tindices = 1\n\t\tlista.append(cont-1)\n\t\tcont = 0\n\nmaximo = 0\nindice = 0\nfor i in range(len(lista)):\n\tif lista[i] > maximo:\n\t\tmaximo = lista[i]\n\t\tindice = i+1\n\nif maximo > 0:\n\tprint 'Conjunto %i - %i elemento(s)' % (indice,maximo)\n",
+      "name": "conjuntos_mais.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0e396a6828c04c96cbe6011abe8e32ab",
+  "iid": 6357831036960768,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "plifplof.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nnumero1 = int(raw_input())\nnumero2 = int(raw_input())\nnumero3 = int(raw_input())\nsomatorio = numero1 + numero2 + numero3\nif somatorio % 3 == 0 and somatorio % 5 == 0:\n\tprint 'plifplof'\nelif somatorio % 3 == 0:\n\tprint 'plif'\nelif somatorio % 5 == 0:\n\tprint 'plof'\n",
+      "name": "plifplof.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 137.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b9b2c0f0808ddeb0e633c06c770eb424",
+  "iid": 5354799851634688,
+  "activity_revision": "1.1.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "c_ceramica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\ncapacidade = float(raw_input('Capacidade de revestimento? '))\nprint '\\n== Dados do v\u00e3o a revestir =='\ncomprimento = float(raw_input('Comprimento? '))\nlargura = float(raw_input('Largura? '))\naltura = float(raw_input('Altura? '))\narea_chao =  comprimento * largura\nperimetro = comprimento + largura + comprimento + largura\narea_parede = perimetro * altura\narea_total = area_chao + area_parede\nn_caixas = area_total / capacidade\nprint '\\n== Resultados =='\nprint '\u00c1rea total a revestir: %4.1f m2' % area_total\nprint 'N\u00famero de caixas: %1.f' % n_caixas\n",
+      "name": "c_ceramica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "564603c59092502f66a72534ad2df4cd",
+  "iid": 5305011542163456,
+  "activity_revision": "1.1.0"
+}

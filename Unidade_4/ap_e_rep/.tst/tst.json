@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ap_e_rep.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Aprovados e Reprovados\n\nquant_alunos = raw_input()\n\nsoma_notas_maiores = 0\nsoma_notas_menores = 0\nquant_aprovados = 0\nquant_reprovados = 0\nfor i in range(int(quant_alunos)):\n\tnota = float(raw_input())\n\tif nota < 7.0:\n\t\tsoma_notas_menores += nota\n\t\tquant_reprovados += 1\n\t\tmedia_reprovados = soma_notas_menores / quant_reprovados\n\telif nota >= 7.0:\n\t\tsoma_notas_maiores += nota\n\t\tquant_aprovados += 1\n\t\tmedia_aprovados = soma_notas_maiores / quant_aprovados\n\nprint 'Reprovados: %i' % quant_reprovados\nif quant_reprovados > 0:\n\tprint 'M\u00e9dia: %.1f' % media_reprovados\nelse:\n\tpass\nprint ''\nprint 'Aprovados: %i' % quant_aprovados\nif quant_aprovados > 0:\n\tprint 'M\u00e9dia: %.1f' % media_aprovados\nelse:\n\tpass\n",
+      "name": "ap_e_rep.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 165.67,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f5966225470861c624ef21b868db7366",
+  "iid": 5793999340175360,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nota_na_final.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nprint '== Est\u00e1gio 1 =='\npeso1 = float(raw_input('Peso? '))\nnota1 = float(raw_input('Nota? '))\nprint '== Est\u00e1gio 2 =='\npeso2 = float(raw_input('Peso? '))\nnota2 = float(raw_input('Nota? '))\nprint '== Est\u00e1gio 3 =='\npeso3 = float(raw_input('Peso? '))\nnota3 = float(raw_input('Nota? '))\nprint '== Resultados =='\nmediaparcial = peso1*nota1 + peso2*nota2 + peso3*nota3\nnotaminimafinal = mediaparcial * 0.6\nnotaminimafinal1 = (5.0 - notaminimafinal) / 0.4\nnotaminimafinal2 = (7.0 - notaminimafinal) / 0.4\nprint 'M\u00e9dia parcial: %.1f' % mediaparcial\nprint 'Nota na final, pra m\u00e9dia 5.0 = %.1f' % notaminimafinal1\nprint 'Nota na final, pra m\u00e9dia 7.0 = %.1f' % notaminimafinal2\n",
+      "name": "nota_na_final.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e3c4dd08dda07143f69f632c5650c713",
+  "iid": 5569912240078848,
+  "activity_revision": "1.1.0"
+}

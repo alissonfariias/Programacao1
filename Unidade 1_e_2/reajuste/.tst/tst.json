@@ -1,0 +1,14 @@
+{
+  "files": {
+    "reajuste.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Percentual de Reajuste\n\nsalario_minimo_atual = float(raw_input('Valor atual? '))\nsalario_minimo_novo = float(raw_input('Novo valor? '))\n\nreajuste = salario_minimo_novo - salario_minimo_atual\nporcentagem = reajuste * 100 / salario_minimo_atual\nprint 'Reajuste de %.1f%%' % porcentagem\n",
+      "name": "reajuste.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ffc102a893a6a43d929c2aad2a5a123a",
+  "iid": 5075575597170688,
+  "activity_revision": "1.1.0"
+}

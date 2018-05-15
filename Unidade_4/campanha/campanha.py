@@ -10,6 +10,12 @@ gols_contra = 0
 vitorias = 0
 empates = 0
 derrotas = 0
+vitorias_em_casa = 0
+empates_em_casa = 0
+derrotas_em_casa = 0
+vitorias_fora = 0
+empates_fora = 0
+derrotas_fora = 0
 for i in range(10):
 	n = raw_input()
 	if n[5] == 'c':
@@ -19,10 +25,13 @@ for i in range(10):
 		gols_contra += int(contra)
 		if gols > contra:
 			vitorias += 1
+			vitorias_em_casa += 1
 		elif gols < contra:
 			derrotas += 1
+			derrotas_em_casa += 1
 		elif gols == contra:
 			empates += 1
+			empates_em_casa += 1		
 	elif n[5] == 'f':
 		gols = n[2]
 		contra = n[0]
@@ -30,16 +39,21 @@ for i in range(10):
 		gols_contra += int(contra)
 		if gols > contra:
 			vitorias += 1
+			vitorias_fora += 1
 		elif gols < contra:
 			derrotas += 1
+			derrotas_fora += 1
 		elif gols == contra:
 			empates += 1
+			empates_fora += 1
 
-vitorias_em_casa = (vitorias * 3) + (empates * 1) + (derrota * 0)
+pontos = (vitorias * 3) + (empates * 1) + (derrotas * 0)
+pontos_em_casa = (vitorias_em_casa * 3) + (empates_em_casa * 1) + (derrotas_em_casa * 0)
+pontos_fora = (vitorias_fora * 3) + (empates_fora * 1) + (derrotas_fora * 0)
 
 
 print '%iv, %ie, %id' % (vitorias,empates,derrotas)
-print 'pontos: %i' % gols_pro
+print 'pontos: %i' % pontos
 print 'saldo: %i (%i pro, %i contra)' % (gols_pro-gols_contra,gols_pro,gols_contra)
-print 'pontos em casa: %i' % vitorias_em_casa
-print 'pontos fora: %i' % vitorias_fora
+print 'pontos em casa: %i' % pontos_em_casa
+print 'pontos fora: %i' % pontos_fora

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "natalina.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\ncodigo_cargo = int(raw_input())\n\nif codigo_cargo == 1:\n\tprint \"Dever\u00e1 receber em dezembro R$ 25000.00.\"\nelif codigo_cargo == 2:\n\tprint \"Dever\u00e1 receber em dezembro R$ 15000.00.\"\nelif codigo_cargo == 3:\n\tgratificacao_por_dia = 2.1276595745\n\tnumero_faltas = int(raw_input())\n\tgratificacao_total = (235 - numero_faltas) * gratificacao_por_dia\n\tsalario = 8000.00 + gratificacao_total\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao_por_dia\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\nelif codigo_cargo == 4:\n\tgratificacao_por_dia = 1.00\n\tnumero_faltas = int(raw_input())\n\tgratificacao_total = (235 - numero_faltas) * gratificacao_por_dia\n\tsalario = 5000.00 + gratificacao_total\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao_total\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\nelif codigo_cargo == 5:\n\tgratificacao_por_dia = 0.8510638298\n\tnumero_faltas = int(raw_input())\n\tgratificacao_total = (235 - numero_faltas) * gratificacao_por_dia\n\tsalario = 2800.00 + gratificacao_total\n\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao_total\n\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\n",
+      "name": "natalina.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 129.66,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f58d4fd4ca1a709bd10d75d2fbfc495c",
+  "iid": 6061301327462400,
+  "activity_revision": "1.0.2"
+}

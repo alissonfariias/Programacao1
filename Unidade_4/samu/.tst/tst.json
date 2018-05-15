@@ -1,0 +1,18 @@
+{
+  "files": {
+    "samu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: SAMU\n\ndias = []\nsoma = 0\nfor i in range(1,13):\n\tmeses = raw_input()\n\tdias.append(meses)\n\tsoma += int(meses)\n\nmedia = soma/12.0\nprint 'M\u00e9dia mensal de atendimentos: %.2f' % media\nprint '----'\n\nfor j in range(len(dias)):\n\tif int(dias[j]) > media:\n\t\tprint 'M\u00eas %i: %i' % (int(j+1),int(dias[j]))\n\telse:\n\t\tpass\n",
+      "name": "samu.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a4a79b7feef7b99285067e24c6c347a8",
+  "iid": 6471723369103360,
+  "activity_revision": "1.1.1"
+}

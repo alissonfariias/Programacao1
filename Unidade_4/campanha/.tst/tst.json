@@ -2,13 +2,13 @@
   "files": {
     "campanha.py": {
       "category": "answer",
-      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Campanha\n\ngols_pro = 0\ngols_contra = 0\nvitorias = 0\nempates = 0\nderrotas = 0\nfor i in range(10):\n\tn = raw_input()\n\tif n[5] == 'c':\n\t\tgols = n[0]\n\t\tcontra = n[2]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\telif n[5] == 'f':\n\t\tgols = n[2]\n\t\tcontra = n[0]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\nvitorias_em_casa = (vitorias * 3) + (empates * 1) + (derrota * 0)\n\n\nprint '%iv, %ie, %id' % (vitorias,empates,derrotas)\nprint 'pontos: %i' % gols_pro\nprint 'saldo: %i (%i pro, %i contra)' % (gols_pro-gols_contra,gols_pro,gols_contra)\nprint 'pontos em casa: %i' % vitorias_em_casa\nprint 'pontos fora: %i' % vitorias_fora\n",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# Unidade 4\n# QUEST\u00c3O: Campanha\n\ngols_pro = 0\ngols_contra = 0\nvitorias = 0\nempates = 0\nderrotas = 0\nvitorias_em_casa = 0\nempates_em_casa = 0\nderrotas_em_casa = 0\nvitorias_fora = 0\nempates_fora = 0\nderrotas_fora = 0\nfor i in range(10):\n\tn = raw_input()\n\tif n[5] == 'c':\n\t\tgols = n[0]\n\t\tcontra = n[2]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\t\tvitorias_em_casa += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\t\tderrotas_em_casa += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\t\t\tempates_em_casa += 1\t\t\n\telif n[5] == 'f':\n\t\tgols = n[2]\n\t\tcontra = n[0]\n\t\tgols_pro += int(gols)\n\t\tgols_contra += int(contra)\n\t\tif gols > contra:\n\t\t\tvitorias += 1\n\t\t\tvitorias_fora += 1\n\t\telif gols < contra:\n\t\t\tderrotas += 1\n\t\t\tderrotas_fora += 1\n\t\telif gols == contra:\n\t\t\tempates += 1\n\t\t\tempates_fora += 1\n\npontos = (vitorias * 3) + (empates * 1) + (derrotas * 0)\npontos_em_casa = (vitorias_em_casa * 3) + (empates_em_casa * 1) + (derrotas_em_casa * 0)\npontos_fora = (vitorias_fora * 3) + (empates_fora * 1) + (derrotas_fora * 0)\n\n\nprint '%iv, %ie, %id' % (vitorias,empates,derrotas)\nprint 'pontos: %i' % pontos\nprint 'saldo: %i (%i pro, %i contra)' % (gols_pro-gols_contra,gols_pro,gols_contra)\nprint 'pontos em casa: %i' % pontos_em_casa\nprint 'pontos fora: %i' % pontos_fora\n",
       "name": "campanha.py"
     }
   },
   "kind": "assignment",
   "name": null,
-  "checksum": "e1b828e08d665c8c8d9b6785affce60d",
+  "checksum": "2fa2988b3cbe1751a0ea3800ca506ca8",
   "iid": 6328674450145280,
   "activity_revision": "1.0.1"
 }

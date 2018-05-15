@@ -1,0 +1,18 @@
+{
+  "files": {
+    "div_proprios.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Universidade Federal de Campina Grande\n# Per\u00edodo: 2017.2\n# Divisores Pr\u00f3prios\n\nnumero = int(raw_input())\n\ndivisiveis = []\nfor i in range(1,numero):\n\tif numero % i == 0:\n\t\tprint i\n\telse:\n\t\tpass\n\n",
+      "name": "div_proprios.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "463fea8fdcfdc0efe05c08a5c46b0dd2",
+  "iid": 5683301658394624,
+  "activity_revision": "1.1.0"
+}

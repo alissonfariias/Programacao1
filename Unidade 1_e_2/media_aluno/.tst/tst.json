@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_aluno.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n# M\u00e9dia do Aluno\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\n\nmedia_ponderada = ((nota1 * 2.0) + (nota2 * 3.0) + (nota3 * 5.0)) / 10.0\n\nprint media_ponderada\n",
+      "name": "media_aluno.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "898ecbf3f1bddb04f0be674474320e96",
+  "iid": 5556495164899328,
+  "activity_revision": "1.1.1"
+}

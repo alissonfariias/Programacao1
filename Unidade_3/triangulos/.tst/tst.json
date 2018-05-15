@@ -1,0 +1,18 @@
+{
+  "files": {
+    "triangulos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nl_a = int(raw_input())\nl_b = int(raw_input())\nl_c = int(raw_input())\nperimetro = (l_a + l_b + l_c)\n\nif l_a < l_b + l_c and l_a > l_b - l_c:\n\tprint 'triangulo valido. %i' % perimetro\nelif l_b < l_a + l_c and l_b > l_a - l_c:\n\tprint 'triangulo valido. %i' % perimetro\nelif l_c < l_a + l_b and l_c > l_a - l_b:\n\tprint 'triangulo valido. %i' % perimetro\nelse:\n\tprint 'triangulo invalido.'\n",
+      "name": "triangulos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 103.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c48f2ca85077b6540c3913afafaef69a",
+  "iid": 4568976822632448,
+  "activity_revision": "1.1.1"
+}

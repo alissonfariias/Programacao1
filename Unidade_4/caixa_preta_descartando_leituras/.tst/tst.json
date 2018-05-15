@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cx.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Universidade Federal de Campina Grande - UFCG\n# Programa\u00e7\u00e3o I - UFCG\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# Unidade: 4\tQuest\u00e3o: Caixa Preta Descartando Leituras\n\ncont_peso = 0\ncont_combustivel = 0\ncont_altitude = 0\nwhile True:\n\tdados = raw_input().split()\n\tpeso = int(dados[0])\n\tcombustivel = int(dados[1])\n\taltitude = int(dados[2])\n\tif peso >= 0:\n\t\tcont_peso += 1\n\t\tif combustivel >= 0:\n\t\t\tcont_combustivel += 1\n\t\t\tif altitude >= 0:\n\t\t\t\tcont_altitude += 1\n\tif peso < 0:\n\t\tprint 'dado inconsistente. peso negativo.'\n\t\tbreak\n\tif combustivel < 0:\n\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\tbreak\n\tif altitude < 0:\n\t\tprint 'dado inconsistente. altitude negativa.'\n\t\tbreak\n\nprint 'peso: %i' % cont_peso\nprint 'combust\u00edvel: %i' % cont_combustivel\nprint 'altitude: %i' % cont_altitude\n",
+      "name": "cx.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a46065858ca61bd47d4439f296eec1cd",
+  "iid": 5752480059097088,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roleta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Walisson Nascimento de Farias\n# Matr\u00edcula: 117210716\n# UFCG - Per\u00edodo: 2017.2\n\nnumero_aposta = int(raw_input())\ncor_aposta = str(raw_input())\nnumero_sorteado = int(raw_input())\ncor_sorteada = str(raw_input())\n\nif numero_aposta == numero_sorteado and cor_aposta == cor_sorteada:\n\tprint '150'\nelif numero_aposta == numero_sorteado and cor_aposta != cor_sorteada:\n\tprint '100'\nelif numero_aposta != numero_sorteado and cor_aposta != cor_sorteada:\n\tprint '0'\nelif cor_aposta == cor_sorteada:\n\tpontos = 50\n\tif numero_sorteado > numero_aposta:\n\t\tprint pontos + 30\n\telif numero_sorteado < numero_aposta:\n\t\tprint pontos + 50\n",
+      "name": "roleta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 69.76,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1ef619150a08875f49b0bcbe68cc7853",
+  "iid": 5897886411784192,
+  "activity_revision": "1.0.1"
+}

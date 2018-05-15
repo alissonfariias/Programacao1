@@ -1,0 +1,14 @@
+{
+  "files": {
+    "circunferencia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nraio = float(raw_input())\ndiagonal = raio * 2\nimport math\nlado = diagonal / math.sqrt(2)\narea_quadrado = lado ** 2\narea_circulo = math.pi * (raio ** 2)\narea_nao_comum = area_circulo - area_quadrado\nprint '\u00c1rea n\u00e3o comum: %5.5f' % area_nao_comum\n",
+      "name": "circunferencia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bd78ae0e58ab58e175e84c0121adc31a",
+  "iid": 5501504660176896,
+  "activity_revision": "1.1.1"
+}
